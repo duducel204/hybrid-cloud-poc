@@ -15,5 +15,8 @@ jobs:
           import json, platform, socket, time
           inicio = time.perf_counter()
           resultado = sum(i * i for i in range(1_000_000))
-          print(json.dumps({'resultado': resultado, 'tempo_calculo_s': round(time.perf_counter() - inicio, 4), 'ambiente': platform.platform(), 'hostname': socket.gethostname(), 'executor': 'github-actions'}, ensure_ascii=False))
+          dados = {'resultado': resultado, 'tempo_calculo_s': round(time.perf_counter() - inicio, 4), 'ambiente': platform.platform(), 'hostname': socket.gethostname(), 'executor': 'github-actions'}
+          texto = json.dumps(dados, ensure_ascii=False)
+          print(texto)
+          print('::notice title=Resultado remoto::' + texto)
           PY
