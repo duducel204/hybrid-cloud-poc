@@ -1,0 +1,204 @@
+[
+  {
+    "id": "M001",
+    "title": "Conversão de RPM em velocidade angular",
+    "formula": "omega = 2*pi*rpm/60",
+    "output": "omega",
+    "output_unit": "rad/s",
+    "inputs": [
+      {
+        "name": "rpm",
+        "unit": "rev/min"
+      }
+    ],
+    "assumptions": [
+      "Rotação rigidamente medida no eixo."
+    ],
+    "does_not_estimate": "Movimento de peles individuais.",
+    "status": "lei_cinematica",
+    "sources": []
+  },
+  {
+    "id": "M002",
+    "title": "Número de Froude rotativo",
+    "formula": "Fr = omega^2*R/g",
+    "output": "Fr",
+    "output_unit": "1",
+    "inputs": [
+      {
+        "name": "omega",
+        "unit": "rad/s"
+      },
+      {
+        "name": "R",
+        "unit": "m"
+      },
+      {
+        "name": "g",
+        "unit": "m/s^2"
+      }
+    ],
+    "assumptions": [
+      "R é raio de referência escolhido e declarado."
+    ],
+    "does_not_estimate": "Regime real dos couros sem carga e geometria.",
+    "status": "numero_adimensional",
+    "sources": [
+      "S003"
+    ]
+  },
+  {
+    "id": "M003",
+    "title": "Pressão hidrostática ideal",
+    "formula": "delta_p = rho*g*h",
+    "output": "delta_p",
+    "output_unit": "Pa",
+    "inputs": [
+      {
+        "name": "rho",
+        "unit": "kg/m^3"
+      },
+      {
+        "name": "g",
+        "unit": "m/s^2"
+      },
+      {
+        "name": "h",
+        "unit": "m"
+      }
+    ],
+    "assumptions": [
+      "Fluido em equilíbrio quase-estático.",
+      "Referência de pressão e densidade conhecidas."
+    ],
+    "does_not_estimate": "Pressão hidrodinâmica em ladrão rotativo sem correção.",
+    "status": "lei_fisica_ideal",
+    "sources": []
+  },
+  {
+    "id": "M004",
+    "title": "Energia mecânica no eixo",
+    "formula": "E = integral(torque_eixo*omega dt)",
+    "output": "E",
+    "output_unit": "J",
+    "inputs": [
+      {
+        "name": "torque_eixo",
+        "unit": "N.m"
+      },
+      {
+        "name": "omega",
+        "unit": "rad/s"
+      },
+      {
+        "name": "t",
+        "unit": "s"
+      }
+    ],
+    "assumptions": [
+      "Torque medido no eixo; perdas e sinal de direção documentados."
+    ],
+    "does_not_estimate": "Energia efetivamente transferida ao couro.",
+    "status": "balanco_mecanico",
+    "sources": []
+  },
+  {
+    "id": "M005",
+    "title": "Conservação de massa de espécie no banho",
+    "formula": "d(V*Cb)/dt = dose_rate - outflow_species_rate - transfer_to_hides_rate - other_losses_rate",
+    "output": "d(V*Cb)/dt",
+    "output_unit": "kg/s",
+    "inputs": [
+      {
+        "name": "V",
+        "unit": "m^3"
+      },
+      {
+        "name": "Cb",
+        "unit": "kg/m^3"
+      },
+      {
+        "name": "dose_rate",
+        "unit": "kg/s"
+      },
+      {
+        "name": "outflow_species_rate",
+        "unit": "kg/s"
+      }
+    ],
+    "assumptions": [
+      "Volume de controle identificado.",
+      "Espécie específica e concentrações definidas.",
+      "Termos de sorção, reação e perda especificados."
+    ],
+    "does_not_estimate": "Fixação ao colágeno a partir de desaparecimento no banho.",
+    "status": "lei_conservacao",
+    "sources": []
+  },
+  {
+    "id": "M006",
+    "title": "Fluxo de transferência de massa interfacial idealizado",
+    "formula": "m_transfer_rate = A_eff*k_m*(Cb-Cs)",
+    "output": "m_transfer_rate",
+    "output_unit": "kg/s",
+    "inputs": [
+      {
+        "name": "A_eff",
+        "unit": "m^2"
+      },
+      {
+        "name": "k_m",
+        "unit": "m/s"
+      },
+      {
+        "name": "Cb",
+        "unit": "kg/m^3"
+      },
+      {
+        "name": "Cs",
+        "unit": "kg/m^3"
+      }
+    ],
+    "assumptions": [
+      "Aproximação interfacial com coeficiente k_m apropriado.",
+      "Área de contato real ou estimada."
+    ],
+    "does_not_estimate": "k_m e A_eff isoladamente a partir de RPM.",
+    "status": "modelo_aproximado",
+    "sources": [
+      "S003"
+    ]
+  },
+  {
+    "id": "M007",
+    "title": "Arrhenius para etapa cinética aplicável",
+    "formula": "k = A*exp(-Ea/(Rgas*T))",
+    "output": "k",
+    "output_unit": "depende_da_lei_cinetica",
+    "inputs": [
+      {
+        "name": "A",
+        "unit": "mesma_unidade_de_k"
+      },
+      {
+        "name": "Ea",
+        "unit": "J/mol"
+      },
+      {
+        "name": "Rgas",
+        "unit": "J/(mol.K)"
+      },
+      {
+        "name": "T",
+        "unit": "K"
+      }
+    ],
+    "assumptions": [
+      "Mecanismo e regime válidos para Arrhenius.",
+      "A e Ea sustentados por fonte adequada à reação."
+    ],
+    "does_not_estimate": "Cinética de etapa não identificada.",
+    "status": "modelo_cinetico_condicional",
+    "sources": []
+  }
+]
