@@ -1,6 +1,6 @@
 {
   "name": "base_curtimento",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "language": "pt-BR",
   "purpose": "Conhecimento científico estruturado, com IDs de fonte e limites de interpretação, para observador físico-químico de fulões.",
   "read_order": [
@@ -17,6 +17,10 @@
     "kb/data/relations.json",
     "kb/data/raw_material_routes.json",
     "kb/data/process_matrix.json",
+    "kb/data/mass_balance_cases.json",
+    "kb/data/reference_ranges.json",
+    "kb/data/reference_formulations.json",
+    "references/BALANCOS-UNIDO-UFRGS-CETESB.md",
     "docs/04-evidencias-e-hipoteses.md"
   ],
   "collections": [
@@ -29,7 +33,10 @@
     "measurements",
     "relations",
     "raw_material_routes",
-    "process_matrix"
+    "process_matrix",
+    "mass_balance_cases",
+    "reference_ranges",
+    "reference_formulations"
   ],
   "source_of_truth": "kb/data/*.json",
   "sqlite": "derivado_em_ambiente_local",

@@ -1,0 +1,93 @@
+[
+  {
+    "id": "RG001",
+    "source_id": "S015",
+    "reference": "Tabela 8, fonte IULTCS 2008a",
+    "source_pages": [
+      "38"
+    ],
+    "variable": "consumo_agua_ribeira_ate_purga",
+    "min": 7,
+    "max": 25,
+    "unit": "m3/t pele salgada",
+    "interpretation": "Faixa de referência de processo, não medição de fulão."
+  },
+  {
+    "id": "RG002",
+    "source_id": "S015",
+    "reference": "Tabela 8",
+    "source_pages": [
+      "38"
+    ],
+    "variable": "consumo_agua_curtimento",
+    "min": 1,
+    "max": 3,
+    "unit": "m3/t pele salgada",
+    "interpretation": "Faixa referida à massa inicial salgada, não massa de wet blue."
+  },
+  {
+    "id": "RG003",
+    "source_id": "S015",
+    "reference": "Tabela 8",
+    "source_pages": [
+      "38"
+    ],
+    "variable": "consumo_agua_pos_curtimento",
+    "min": 4,
+    "max": 8,
+    "unit": "m3/t pele salgada",
+    "interpretation": "Fora do escopo inicial até wet blue, mantido para não perder conhecimento."
+  },
+  {
+    "id": "RG004",
+    "source_id": "S015",
+    "reference": "Tabela 8",
+    "source_pages": [
+      "38"
+    ],
+    "variable": "consumo_agua_acabamento",
+    "min": 0,
+    "max": 1,
+    "unit": "m3/t pele salgada",
+    "interpretation": "Fora do escopo inicial até wet blue."
+  },
+  {
+    "id": "RG005",
+    "source_id": "S015",
+    "reference": "Tabela 8",
+    "source_pages": [
+      "38"
+    ],
+    "variable": "consumo_agua_total",
+    "min": 12,
+    "max": 37,
+    "unit": "m3/t pele salgada",
+    "interpretation": "Soma de faixas por etapa para curtume integrado; não implica qualquer fulão."
+  },
+  {
+    "id": "RG006",
+    "source_id": "S013",
+    "reference": "Seção 5.3",
+    "source_pages": [
+      "17–18"
+    ],
+    "variable": "agua_processo_hipotetica",
+    "min": 32,
+    "max": 32,
+    "unit": "m3/t pele salgada",
+    "interpretation": "Estimativa pontual do cenário, sem faixa de incerteza indicada."
+  },
+  {
+    "id": "RG007",
+    "source_id": "S013",
+    "reference": "Seção 5.3",
+    "source_pages": [
+      "17–18"
+    ],
+    "variable": "agua_tecnica_hipotetica",
+    "min": 8,
+    "max": 8,
+    "unit": "m3/t pele salgada",
+    "interpretation": "Estimativa adicional para uso técnico, não apenas banhos."
+  }
+]

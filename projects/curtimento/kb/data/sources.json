@@ -124,5 +124,55 @@
     "page_count": 370,
     "rights": "© BASF. Manter só metadados, fatos breves e equações com atribuição; não republicar livro.",
     "access_limits": "Versão exibida no Scribd; fórmulas gráficas e figuras podem não ser capturadas pelo texto extraído. A 5ª edição não foi verificada nesta ingestão."
+  },
+  {
+    "id": "S013",
+    "title": "Mass Balance in Leather Processing",
+    "publisher": "UNIDO",
+    "authors": [
+      "J. Buljan",
+      "G. Reich",
+      "J. Ludvik"
+    ],
+    "year": 2000,
+    "publication_date": "2000-08-09",
+    "kind": "technical_report",
+    "url": "https://www.unido.org/publications/ot/9654228/pdf",
+    "scope": "Balanços de massa desde ribeira até acabamento, distribuição de Cr2O3, colágeno, insumos, água, cenário de referência e formulação ilustrativa no Anexo 1.",
+    "access": "pdf_integral_30_paginas_conferido",
+    "limitations": "Curtume hipotético com dados, experiências e estimativas; resultados não são médias universais nem dados do equipamento do usuário.",
+    "page_count": 30
+  },
+  {
+    "id": "S014",
+    "title": "Balanço de massa: uma ferramenta para otimizar os processos de ribeira e curtimento",
+    "publisher": "Universidade Federal do Rio Grande do Sul",
+    "authors": [
+      "Patrice Monteiro de Aquim"
+    ],
+    "year": 2004,
+    "kind": "master_dissertation",
+    "url": "https://lume.ufrgs.br/handle/10183/5049",
+    "pdf_url": "https://lume.ufrgs.br/bitstream/10183/5049/1/000464394.pdf",
+    "scope": "Pesquisa acadêmica sobre balanço de massa, aproveitamento e perdas da pele até wet blue e aplicação em gestão de processos.",
+    "access": "resumo_e_metadados_academicos_verificados_pdf_integral_nao_aberto",
+    "limitations": "Não registrar valores de resultados, métodos específicos ou páginas internas sem acesso ao texto completo."
+  },
+  {
+    "id": "S015",
+    "title": "Guia Técnico Ambiental de Curtumes",
+    "publisher": "CETESB",
+    "authors": [
+      "Walter Alves Ferrari",
+      "José Wagner Faria Pacheco et al."
+    ],
+    "year": 2015,
+    "edition": "2ª revisada e atualizada",
+    "kind": "technical_environmental_guide",
+    "url": "https://repositorio.cetesb.sp.gov.br/bitstreams/efa182b5-ad26-4778-9a2f-f6028fc8ddfe/download",
+    "scope": "Processo industrial, insumos, distribuição de massa úmida/seca/água, práticas ambientais, consumo de água por etapa e diferenças entre peles verdes e salgadas.",
+    "access": "pdf_integral_128_paginas_conferido",
+    "limitations": "Tabela 7 é exemplo com valores médios e aproximações; faixas da Tabela 8 baseadas em outra fonte IULTCS; não extrapolar a qualquer fulão.",
+    "page_count": 128
   }
 ]

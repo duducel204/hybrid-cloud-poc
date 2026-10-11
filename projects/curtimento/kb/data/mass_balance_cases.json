@@ -1,0 +1,318 @@
+[
+  {
+    "id": "MB001",
+    "title": "UNIDO ribeira sem divisão no caleiro",
+    "source_id": "S013",
+    "source_pages": [
+      "7"
+    ],
+    "reference": "Figura 3, coluna without splitting",
+    "basis": "1.000 kg pele salgada úmida",
+    "scope": "ribeira",
+    "unit": "kg massa bruta",
+    "inputs": [
+      {
+        "name": "pele_salgada",
+        "value": 1000
+      },
+      {
+        "name": "agua_processo",
+        "value": 17000
+      },
+      {
+        "name": "tensoativo",
+        "value": 3
+      },
+      {
+        "name": "hidroxido_calcio",
+        "value": 40
+      },
+      {
+        "name": "sulfetos",
+        "value": 25
+      },
+      {
+        "name": "sais_amonio",
+        "value": 27
+      },
+      {
+        "name": "acidos",
+        "value": 9
+      },
+      {
+        "name": "enzimas",
+        "value": 5
+      }
+    ],
+    "outputs": [
+      {
+        "name": "efluente",
+        "value": 16300
+      },
+      {
+        "name": "sal_removido",
+        "value": 200
+      },
+      {
+        "name": "tensoativo",
+        "value": 3
+      },
+      {
+        "name": "hidroxido_calcio",
+        "value": 40
+      },
+      {
+        "name": "sulfetos",
+        "value": 25
+      },
+      {
+        "name": "sais_amonio",
+        "value": 27
+      },
+      {
+        "name": "acidos",
+        "value": 9
+      },
+      {
+        "name": "enzimas",
+        "value": 5
+      },
+      {
+        "name": "carnaca",
+        "value": 300
+      },
+      {
+        "name": "aparas",
+        "value": 100
+      },
+      {
+        "name": "pele_caleirada",
+        "value": 1100
+      }
+    ],
+    "expected_total": 18109,
+    "interpretation": "Modelo ilustrativo de balanço com correntes de entrada e saída; quantidades não são receita nem medição real do usuário.",
+    "note": "Representação reproduz categorias numéricas agregadas da Figura 3; massas de reagentes aparecem como fluxos contabilizados, não especiação química residual."
+  },
+  {
+    "id": "MB002",
+    "title": "UNIDO ribeira com divisão no caleiro",
+    "source_id": "S013",
+    "source_pages": [
+      "7"
+    ],
+    "reference": "Figura 3, coluna splitting after liming",
+    "basis": "1.000 kg pele salgada úmida",
+    "scope": "ribeira",
+    "unit": "kg massa bruta",
+    "inputs": [
+      {
+        "name": "pele_salgada",
+        "value": 1000
+      },
+      {
+        "name": "agua_processo",
+        "value": 16700
+      },
+      {
+        "name": "tensoativo",
+        "value": 3
+      },
+      {
+        "name": "hidroxido_calcio",
+        "value": 40
+      },
+      {
+        "name": "sulfetos",
+        "value": 25
+      },
+      {
+        "name": "sais_amonio",
+        "value": 17
+      },
+      {
+        "name": "enzimas",
+        "value": 3
+      }
+    ],
+    "outputs": [
+      {
+        "name": "efluente",
+        "value": 16000
+      },
+      {
+        "name": "sal_removido",
+        "value": 200
+      },
+      {
+        "name": "tensoativo",
+        "value": 3
+      },
+      {
+        "name": "hidroxido_calcio",
+        "value": 40
+      },
+      {
+        "name": "sulfetos",
+        "value": 25
+      },
+      {
+        "name": "sais_amonio",
+        "value": 17
+      },
+      {
+        "name": "enzimas",
+        "value": 3
+      },
+      {
+        "name": "carnaca",
+        "value": 300
+      },
+      {
+        "name": "aparas",
+        "value": 100
+      },
+      {
+        "name": "raspa_nao_aproveitavel",
+        "value": 155
+      },
+      {
+        "name": "flor_caleirada",
+        "value": 750
+      },
+      {
+        "name": "raspa_caleirada",
+        "value": 195
+      }
+    ],
+    "expected_total": 17788,
+    "interpretation": "Contraste de rota de divisão na ribeira, não comparação de qualidade provada.",
+    "note": "Comparar com MB001 requer atenção às diferenças de produtos e saídas; não declarar ganho causal em massa de um único parâmetro."
+  },
+  {
+    "id": "MB003",
+    "title": "UNIDO distribuição do cromo ofertado",
+    "source_id": "S013",
+    "source_pages": [
+      "10"
+    ],
+    "reference": "Figura 8",
+    "basis": "1.100 kg de pele caleirada (cromo no curtimento principal)",
+    "scope": "curtimento_cromo",
+    "unit": "kg equivalente Cr2O3",
+    "inputs": [
+      {
+        "name": "oferta_total_cr2o3",
+        "value": 22
+      }
+    ],
+    "outputs": [
+      {
+        "name": "flor_aproveitavel",
+        "value": 7.5
+      },
+      {
+        "name": "raspa_aproveitavel",
+        "value": 2.5
+      },
+      {
+        "name": "residuos_solidos",
+        "value": 6.5
+      },
+      {
+        "name": "efluente",
+        "value": 5.5
+      }
+    ],
+    "expected_total": 22,
+    "interpretation": "Retenção útil = 10/22 ou 45,45% da oferta; total em peles + resíduos sólidos = 16,5/22 ou 75%; efluente 25%. A fração em resíduos não equivale a produto vendável.",
+    "note": "Todas as correntes reportadas como equivalente Cr2O3, não massa de sulfato básico de cromo nem Cr metálico."
+  },
+  {
+    "id": "MB004",
+    "title": "CETESB balanço geral do curtume (exemplo)",
+    "source_id": "S015",
+    "source_pages": [
+      "37"
+    ],
+    "reference": "Tabela 7 (valores médios)",
+    "basis": "1.000 kg peles salgadas, processo de curtume integrado",
+    "scope": "curtume_integrado",
+    "unit": "kg massa bruta",
+    "inputs": [
+      {
+        "name": "peles_salgadas",
+        "value": 1000,
+        "dry_kg": 650,
+        "water_kg": 350
+      },
+      {
+        "name": "produtos_quimicos",
+        "value": 500,
+        "dry_kg": 450,
+        "water_kg": 50
+      },
+      {
+        "name": "agua_adicionada",
+        "value": 20000,
+        "dry_kg": 0,
+        "water_kg": 20000
+      }
+    ],
+    "outputs": [
+      {
+        "name": "couros",
+        "value": 250,
+        "dry_kg": 210,
+        "water_kg": 40
+      },
+      {
+        "name": "aparas_raspas_nao_curtidas",
+        "value": 178,
+        "dry_kg": 62,
+        "water_kg": 116
+      },
+      {
+        "name": "carnaca",
+        "value": 163,
+        "dry_kg": 33,
+        "water_kg": 130
+      },
+      {
+        "name": "residuos_blue",
+        "value": 110,
+        "dry_kg": 55,
+        "water_kg": 55
+      },
+      {
+        "name": "residuos_acabados",
+        "value": 14,
+        "dry_kg": 12,
+        "water_kg": 2
+      },
+      {
+        "name": "solventes_organicos",
+        "value": 5,
+        "dry_kg": 5,
+        "water_kg": 0
+      },
+      {
+        "name": "lodo_ete",
+        "value": 323,
+        "dry_kg": 103,
+        "water_kg": 220
+      },
+      {
+        "name": "outros_efluentes_e_perdas",
+        "value": 20457,
+        "dry_kg": 620,
+        "water_kg": 19837
+      }
+    ],
+    "expected_total": 21500,
+    "expected_dry_total": 1100,
+    "expected_water_total": 20400,
+    "interpretation": "Balanço completo do exemplo em três bases: 21.500 kg úmidos, 1.100 kg secos e 20.400 kg água, cada uma com entradas e saídas iguais.",
+    "note": "CETESB agrega na categoria outros líquidos, retenções e perdas; não atribuir exclusivamente a efluente."
+  }
+]

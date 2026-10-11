@@ -5,7 +5,7 @@
 ## Inicialização obrigatória
 
 1. Ler `README.md` deste diretório.
-2. Ler `kb/README.md`, `kb/data/sources.json` e as coleções pertinentes em `kb/data/`.
+2. Ler `kb/README.md`, `kb/data/sources.json`, a coleção matemática `kb/data/models.json` e as coleções pertinentes em `kb/data/`. Consultar `kb/data/mass_balance_cases.json` para valores numéricos documentados.
 3. Consultar `docs/04-evidencias-e-hipoteses.md` para não promover hipóteses a fatos.
 4. Para projetar novas medições, seguir `docs/05-metodo-forward-backward.md`.
 

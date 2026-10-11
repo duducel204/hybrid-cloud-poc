@@ -11,6 +11,14 @@ Fontes prioritárias já identificadas:
 - ISO 4045:2018 (pH do extrato aquoso do couro), ISO 5398-1:2018 (cromo total no couro) e ISO 3380:2015 (retração até 100°C): S008–S010; resumos oficiais, **não** reprodução de normas.
 - ISO 4684:2005 (matéria volátil, não teor exato de água): S011.
 
+## Estudos de balanço de massa incorporados
+
+- **S013, UNIDO 2000:** cenário de balanços da ribeira ao acabamento. Dados de massa por corrente, repartição de Cr₂O₃ (p. 10) e formulação por base de pesagem (Anexo 1, p. 24–25). Texto integral consultado.
+- **S014, Aquim/UFRGS 2004:** dissertação sobre balanço de massa da ribeira e curtimento. Resumo e metadados consultados; não foram extraídos resultados quantitativos não verificados.
+- **S015, CETESB 2015:** Guia Técnico Ambiental de Curtumes, 2ª edição. Tabela 7 (p. 37) com balanço global, Tabela 8 (p. 38) com intervalos de água e texto sobre pele verde/salgada.
+- [Comparação e limitações de leitura](BALANCOS-UNIDO-UFRGS-CETESB.md)
+- [Balanços de referência em JSON](../kb/data/mass_balance_cases.json)
+
 ## Materiais exploratórios compartilhados
 
 - *IoT no Curtimento de Couros: Automação e Benchmarking*, 17 páginas (2026-10-11).

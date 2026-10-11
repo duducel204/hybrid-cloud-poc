@@ -271,5 +271,135 @@
     "source_pages": [
       "306"
     ]
+  },
+  {
+    "id": "K025",
+    "stage": "geral",
+    "claim": "UNIDO (2000) constrói balanço para curtume bovino hipotético, com base em 1.000 kg de peles salgadas úmidas e 1.100 kg de peles caleiradas na referência do curtimento.",
+    "source_ids": [
+      "S013"
+    ],
+    "limits": "Formação de couro para cabedal; dados de plantas específicas, literatura e estimativas; não é dataset industrial medido único.",
+    "status": "documentado",
+    "source_pages": [
+      "4",
+      "24–25"
+    ]
+  },
+  {
+    "id": "K026",
+    "stage": "geral",
+    "claim": "No cenário da UNIDO, aproximadamente 53% do colágeno do cório considerado formador de couro chega ao couro acabado.",
+    "source_ids": [
+      "S013"
+    ],
+    "limits": "Taxa referente ao balanço de referência com divisão em wet blue; não é rendimento de massa úmida.",
+    "status": "documentado",
+    "source_pages": [
+      "16–17"
+    ]
+  },
+  {
+    "id": "K027",
+    "stage": "curtimento_cromo",
+    "claim": "Na Figura 8 da UNIDO, dos 22 kg de Cr2O3 ofertados, 7,5 kg aparecem na flor aproveitável, 2,5 kg na raspa aproveitável, 6,5 kg em resíduos sólidos e 5,5 kg em efluentes.",
+    "source_ids": [
+      "S013"
+    ],
+    "limits": "O indicador de esgotamento da etapa (~75% distribuído em couro + resíduo sólido) não equivale a retenção no couro comercial: este soma 10/22 kg (~45,5%).",
+    "status": "documentado",
+    "source_pages": [
+      "10"
+    ]
+  },
+  {
+    "id": "K028",
+    "stage": "geral",
+    "claim": "O Anexo 1 da UNIDO apresenta formulação de referência com porcentagens baseadas no peso de pele salgada ou de pele caleirada, conforme a etapa.",
+    "source_ids": [
+      "S013"
+    ],
+    "limits": "Base de cálculo muda por operação e formulação é ilustrativa/histórica; não interpretar percentuais sobre uma única massa nem como prescrição.",
+    "status": "documentado",
+    "source_pages": [
+      "24–25"
+    ]
+  },
+  {
+    "id": "K029",
+    "stage": "remolho",
+    "claim": "CETESB distingue o fluxo de peles verdes e salgadas; a rota salgada costuma adicionar pré-remolho e lavagens, elevando água, insumos e carga de cloretos, em comparação com a verde.",
+    "source_ids": [
+      "S015"
+    ],
+    "limits": "Diferenças são típicas e dependem da conservação/roteiro real; não representam duas receitas completas e universais.",
+    "status": "documentado",
+    "source_pages": [
+      "35"
+    ]
+  },
+  {
+    "id": "K030",
+    "stage": "geral",
+    "claim": "CETESB informa intervalo de 12–37 m3 de água por tonelada de pele salgada em processo integrado, com 7–25 m3/t na ribeira e 1–3 m3/t no curtimento.",
+    "source_ids": [
+      "S015"
+    ],
+    "limits": "Faixas citadas da IULTCS (2008a), contexto produtivo heterogêneo; não são metas obrigatórias nem valores apenas do banho.",
+    "status": "documentado",
+    "source_pages": [
+      "38"
+    ]
+  },
+  {
+    "id": "K031",
+    "stage": "geral",
+    "claim": "O exemplo da CETESB fecha 21.500 kg de entradas e saídas para 1.000 kg de peles salgadas, 500 kg de produtos químicos e 20.000 kg de água.",
+    "source_ids": [
+      "S015"
+    ],
+    "limits": "Exemplo agregado de curtume; categoria 'outros' inclui correntes de efluente e resíduos e não descreve medições por fulão.",
+    "status": "documentado",
+    "source_pages": [
+      "37"
+    ]
+  },
+  {
+    "id": "K032",
+    "stage": "geral",
+    "claim": "A dissertação de Aquim (UFRGS, 2004) trata do balanço de massa e das perdas/aproveitamento de insumos nos processos de ribeira e curtimento até wet blue.",
+    "source_ids": [
+      "S014"
+    ],
+    "limits": "Somente resumo e metadados foram consultáveis nesta ingestão; nenhum resultado numérico da dissertação foi importado.",
+    "status": "documentado",
+    "source_pages": []
+  },
+  {
+    "id": "K033",
+    "stage": "geral",
+    "claim": "UNIDO estima que, em seu cenário, cerca de 72 kg dos 452 kg de químicos de processo são retidos no couro (aproximadamente 15%).",
+    "source_ids": [
+      "S013"
+    ],
+    "limits": "Agregado de classes químicas diferentes ao longo de várias etapas; NÃO corresponde à eficiência de um único produto ou reação.",
+    "status": "documentado",
+    "source_pages": [
+      "19",
+      "21"
+    ]
+  },
+  {
+    "id": "K034",
+    "stage": "geral",
+    "claim": "UNIDO esclarece que menor consumo de água pode elevar a concentração de poluentes (mg/L) mesmo quando a carga total (kg) diminui.",
+    "source_ids": [
+      "S013"
+    ],
+    "limits": "Comparar cargas e concentrações usando vazão/volume e composição; concentração isolada não é medida de redução de emissões.",
+    "status": "documentado",
+    "source_pages": [
+      "20"
+    ]
   }
 ]

@@ -22,5 +22,71 @@
     "interpretable_as": "Evidência de ligação entre forma do movimento e transferência de massa nas condições do artigo.",
     "not_interpretable_as": "Coeficiente k_m conhecido para qualquer fulão ou inferência automática do estado das peles.",
     "data_quality": "resultado_no_resumo_publicado"
+  },
+  {
+    "id": "E003",
+    "claim_id": "K027",
+    "study_source_id": "S013",
+    "design": "UNIDO: cenário convencional calculado com 1.100 kg de pele caleirada (Tabela/Figura 8).",
+    "reported_effect": "Cr2O3: 22 kg de entrada = 7,5 kg flor + 2,5 kg raspa útil + 6,5 kg resíduo + 5,5 kg efluente.",
+    "interpretable_as": "Distribuição de espécie em quatro destinos com fechamento de massa exato.",
+    "not_interpretable_as": "Taxa de fixação química molecular, média industrial medida ou balanço do fulão do usuário.",
+    "source_pages": [
+      "10"
+    ],
+    "data_quality": "tabela_ou_texto_documento_integral"
+  },
+  {
+    "id": "E004",
+    "claim_id": "K030",
+    "study_source_id": "S015",
+    "design": "CETESB 2015: Tabela 8, consumo por operação referido a 1 t de pele salgada, fonte IULTCS 2008a.",
+    "reported_effect": "Ribeira 7–25, curtimento 1–3, pós-curtimento 4–8, acabamento 0–1, total 12–37 m3/t.",
+    "interpretable_as": "Intervalos publicados e suas bases para comparações posteriores.",
+    "not_interpretable_as": "Soma das medições de um curtume particular nem objetivo obrigatório de consumo.",
+    "source_pages": [
+      "38"
+    ],
+    "data_quality": "tabela_ou_texto_documento_integral"
+  },
+  {
+    "id": "E005",
+    "claim_id": "K031",
+    "study_source_id": "S015",
+    "design": "CETESB 2015, Tabela 7 de massas brutas, secas e água em entradas e saídas para curtume integrado.",
+    "reported_effect": "Massas de entrada e saída: bruta 21.500 kg, seca 1.100 kg e água 20.400 kg.",
+    "interpretable_as": "Fechamento do balanço do exemplo da CETESB com correntes contabilizadas.",
+    "not_interpretable_as": "Balanço por etapa ou por fulão, nem indicadores de rendimento do couro sem escolher o denominador.",
+    "source_pages": [
+      "37"
+    ],
+    "data_quality": "tabela_ou_texto_documento_integral"
+  },
+  {
+    "id": "E006",
+    "claim_id": "K026",
+    "study_source_id": "S013",
+    "design": "UNIDO 2000, Figura 17; separa colágeno do cório e colágeno total.",
+    "reported_effect": "Dos 280 kg de colágeno do cório, 149 kg permanecem em couro acabado: 53% aproximados.",
+    "interpretable_as": "Rendimento de colágeno formador de couro na rota estudada.",
+    "not_interpretable_as": "Rendimento em massa úmida, rendimento em área ou proporção universal.",
+    "source_pages": [
+      "16–17"
+    ],
+    "data_quality": "tabela_ou_texto_documento_integral"
+  },
+  {
+    "id": "E007",
+    "claim_id": "K033",
+    "study_source_id": "S013",
+    "design": "UNIDO 2000, comparação de químicos totais de processo, diversas classes.",
+    "reported_effect": "Químicos comprados 452 kg, retidos 72 kg, restantes 380 kg no destino não útil segundo o modelo.",
+    "interpretable_as": "Eficiência material agregada ~15,9% (documento arredonda para 15%).",
+    "not_interpretable_as": "Eficiência individual de cromo, sulfeto, enzimas, fixação ou transformação química.",
+    "source_pages": [
+      "19",
+      "21"
+    ],
+    "data_quality": "tabela_ou_texto_documento_integral"
   }
 ]

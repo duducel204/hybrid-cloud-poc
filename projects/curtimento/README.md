@@ -6,7 +6,8 @@
 
 1. **[Base de conhecimento pesquisável](kb/README.md)**: conteúdo factual estruturado em JSON; fontes, oito etapas, química, medições, modelos e evidências.
 2. [Protocolo de atuação das IAs](AGENTS.md): como consultar e acrescentar conhecimento sem reinventar ou misturar hipóteses e fatos.
-3. [Vade-mécum BASF 2004: índice crítico e fórmulas](references/BASF-VADEMECUM-2004.md).
+3. [Balanços da UNIDO, CETESB e dissertação UFRGS](references/BALANCOS-UNIDO-UFRGS-CETESB.md).
+4. [Vade-mécum BASF 2004: índice crítico e fórmulas](references/BASF-VADEMECUM-2004.md).
 4. [Processo e química](docs/01-processo.md) e [modelos físicos](docs/02-modelo-fisico-quimico.md).
 5. [Geometria e sensores candidatos](docs/03-sensores-e-geometria.md).
 6. [Hipóteses e limites](docs/04-evidencias-e-hipoteses.md).

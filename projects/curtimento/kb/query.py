@@ -13,7 +13,8 @@ DATA = ROOT / "data"
 COLLECTIONS = (
     "sources", "processes", "chemistry", "knowledge",
     "evidence", "models", "measurements", "relations",
-    "raw_material_routes", "process_matrix"
+    "raw_material_routes", "process_matrix",
+    "mass_balance_cases", "reference_ranges", "reference_formulations"
 )
 
 def load():
@@ -93,6 +94,45 @@ def validate(data):
         check_ref(item, "model_ids", "models")
         if not item.get("known_mechanism") or not item.get("independent_checks") or not item.get("limits"):
             errors.append(f"{item.get('id')}: incomplete process matrix")
+    for item in data["mass_balance_cases"]:
+        check_ref(item, "source_id", "sources", False)
+        if not item.get("basis") or not item.get("source_pages"):
+            errors.append(f"{item.get('id')}: faltam base e pagina da fonte")
+        for stream in ("inputs", "outputs"):
+            rows = item.get(stream)
+            if not isinstance(rows, list) or not rows:
+                errors.append(f"{item.get('id')}: {stream} sem correntes")
+                continue
+            amounts = [row.get("value") for row in rows]
+            if any(not isinstance(value, (float, int)) for value in amounts):
+                errors.append(f"{item.get('id')}: massa invalida em {stream}")
+                continue
+            if abs(sum(amounts) - item.get("expected_total", float('nan'))) > 1e-6:
+                errors.append(f"{item.get('id')}: falha fechamento bruto {stream}")
+            for row in rows:
+                if row.get("dry_kg") is not None:
+                    if abs(row["dry_kg"] + row.get("water_kg", 0) - row["value"]) > 1e-6:
+                        errors.append(f"{item.get('id')}: falha decomposicao seca/agua {stream}")
+            if "expected_dry_total" in item:
+                if abs(sum(row.get("dry_kg", 0) for row in rows) - item["expected_dry_total"]) > 1e-6:
+                    errors.append(f"{item.get('id')}: falha massa seca {stream}")
+                if abs(sum(row.get("water_kg", 0) for row in rows) - item["expected_water_total"]) > 1e-6:
+                    errors.append(f"{item.get('id')}: falha agua {stream}")
+    for item in data["reference_ranges"]:
+        check_ref(item, "source_id", "sources", False)
+        if (not isinstance(item.get("min"), (int, float)) or
+                not isinstance(item.get("max"), (int, float)) or
+                item["min"] > item["max"] or not item.get("unit")):
+            errors.append(f"{item.get('id')}: intervalo ou unidade invalido")
+    for item in data["reference_formulations"]:
+        check_ref(item, "source_id", "sources", False)
+        check_ref(item, "stage", "processes", False)
+        if not item.get("basis") or not item.get("basis_kg"):
+            errors.append(f"{item.get('id')}: falta base de pesagem")
+        for chem in item.get("items", []):
+            if not isinstance(chem.get("percent_mass"), (int, float)):
+                errors.append(f"{item.get('id')}: porcentagem invalida")
+
     for item in data["sources"]:
         if not item.get("url") or not item.get("title") or not item.get("access"):
             errors.append(f"{item.get('id')}: fonte incompleta")
@@ -106,6 +146,8 @@ def main():
     sub = p.add_subparsers(dest="command", required=True)
     sub.add_parser("validate")
     sub.add_parser("stats")
+    bal = sub.add_parser("balance")
+    bal.add_argument("case_id")
     s = sub.add_parser("search")
     s.add_argument("query")
     s.add_argument("--collection", choices=COLLECTIONS)
@@ -124,6 +166,26 @@ def main():
         elif a.command == "stats":
             for name in COLLECTIONS:
                 print(f"{name}: {len(data[name])}")
+        elif a.command == "balance":
+            case = next((c for c in data["mass_balance_cases"] if c["id"] == a.case_id), None)
+            if case is None:
+                print(f"ERRO: caso desconhecido {a.case_id}", file=sys.stderr)
+                return 2
+            print(f"{case['id']}: {case['title']}")
+            print(f"Fonte: {case['source_id']}, paginas: {', '.join(case['source_pages'])}")
+            print(f"Base: {case['basis']}, unidade: {case['unit']}")
+            inp = sum(x["value"] for x in case["inputs"])
+            out = sum(x["value"] for x in case["outputs"])
+            print(f"Entradas: {inp:g}; saidas: {out:g}; residuo: {inp-out:g}")
+            if "expected_dry_total" in case:
+                for metric, key in (("seca", "dry_kg"), ("agua", "water_kg")):
+                    i = sum(x.get(key, 0) for x in case["inputs"])
+                    o = sum(x.get(key, 0) for x in case["outputs"])
+                    print(f"Massa {metric}: entrada {i:g}, saida {o:g}, residuo {i-o:g}")
+            print("Saidas:")
+            for item in case["outputs"]:
+                print(f"  {item['name']}: {item['value']:g} ({100*item['value']/inp:.2f}% da massa de entrada)")
+            print("Interpretacao:", case["interpretation"])
         elif a.command == "search":
             q = a.query.casefold()
             n = 0

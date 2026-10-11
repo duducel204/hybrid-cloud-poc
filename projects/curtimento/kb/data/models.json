@@ -291,5 +291,113 @@
     "source_pages": [
       "306"
     ]
+  },
+  {
+    "id": "M010",
+    "title": "Fechamento de massa total em volume de controle",
+    "formula": "erro_fechamento_kg = soma_entradas_kg - soma_saidas_kg",
+    "output": "erro_fechamento_kg",
+    "output_unit": "kg",
+    "inputs": [
+      {
+        "name": "soma_entradas_kg",
+        "unit": "kg"
+      },
+      {
+        "name": "soma_saidas_kg",
+        "unit": "kg"
+      }
+    ],
+    "assumptions": [
+      "Volume de controle, instante e períodos comuns.",
+      "Todas as correntes e acúmulo necessários incluídos.",
+      "Em processo dinâmico há termo de acumulação, não supor entrada = saída instantânea."
+    ],
+    "does_not_estimate": "Quantidade reativa/fixada de químico sem separação de espécies e destinos.",
+    "status": "conservacao_de_massa",
+    "sources": [
+      "S013",
+      "S015"
+    ]
+  },
+  {
+    "id": "M011",
+    "title": "Parcela de massa do componente por destino",
+    "formula": "fracao_destino_pct = 100 * massa_destino_especie_kg / massa_total_entrada_especie_kg",
+    "output": "fracao_destino_pct",
+    "output_unit": "%",
+    "inputs": [
+      {
+        "name": "massa_destino_especie_kg",
+        "unit": "kg"
+      },
+      {
+        "name": "massa_total_entrada_especie_kg",
+        "unit": "kg"
+      }
+    ],
+    "assumptions": [
+      "Mesmo componente químico, mesma representação analítica e intervalo em numerador e denominador.",
+      "Corrigir eventuais entradas adicionais e inventários iniciais."
+    ],
+    "does_not_estimate": "Interação molecular/fixação ou qualidade a partir de uma fração de destino.",
+    "status": "indicador_contabil",
+    "sources": [
+      "S013"
+    ]
+  },
+  {
+    "id": "M012",
+    "title": "Base de cálculo de produtos e água por operação",
+    "formula": "massa_aplicada_kg = (percentual_da_operacao/100) * massa_base_operacao_kg",
+    "output": "massa_aplicada_kg",
+    "output_unit": "kg",
+    "inputs": [
+      {
+        "name": "percentual_da_operacao",
+        "unit": "%"
+      },
+      {
+        "name": "massa_base_operacao_kg",
+        "unit": "kg"
+      }
+    ],
+    "assumptions": [
+      "Base de massa indicada para cada operação.",
+      "Teor ativo comercial especificado separadamente.",
+      "Se o insumo é água em porcentagem, converter massa em volume com densidade adequada."
+    ],
+    "does_not_estimate": "Teor ativo, massa de espécie pura, incorporação no couro ou dosagem operacional segura.",
+    "status": "conversao_de_percentual",
+    "sources": [
+      "S013"
+    ]
+  },
+  {
+    "id": "M013",
+    "title": "Balanço entre massas úmida, seca e de água",
+    "formula": "massa_bruta_kg = massa_seca_kg + massa_agua_kg",
+    "output": "massa_bruta_kg",
+    "output_unit": "kg",
+    "inputs": [
+      {
+        "name": "massa_seca_kg",
+        "unit": "kg"
+      },
+      {
+        "name": "massa_agua_kg",
+        "unit": "kg"
+      }
+    ],
+    "assumptions": [
+      "Definição analítica de massa seca e água consistente com metodologia.",
+      "Correntes claramente identificadas.",
+      "Não converter massa de água em volume sem densidade e condições."
+    ],
+    "does_not_estimate": "Rendimento químico, umidade interna uniforme ou composição detalhada da massa seca.",
+    "status": "identidade_de_massa",
+    "sources": [
+      "S015"
+    ]
   }
 ]
