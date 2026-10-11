@@ -1,0 +1,166 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Observação físico-química do fulão v0.1",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "event_id",
+    "timestamp_utc",
+    "fulao_id",
+    "lote_couro_id",
+    "etapa",
+    "tipo",
+    "origem",
+    "qualidade"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "0.1.0"
+    },
+    "event_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "timestamp_utc": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "fulao_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "lote_couro_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "etapa": {
+      "type": "string",
+      "enum": [
+        "remolho",
+        "depilacao_caleiro",
+        "descarne_divisao",
+        "desencalagem",
+        "purga",
+        "piquel",
+        "curtimento_cromo",
+        "basificacao",
+        "wet_blue",
+        "outra"
+      ]
+    },
+    "tipo": {
+      "type": "string",
+      "enum": [
+        "medicao",
+        "evento",
+        "analise_laboratorial",
+        "valor_calculado"
+      ]
+    },
+    "origem": {
+      "type": "string",
+      "enum": [
+        "sensor_interno",
+        "sensor_externo",
+        "inversor",
+        "operador",
+        "laboratorio",
+        "receita",
+        "modelo"
+      ]
+    },
+    "sensor_id": {
+      "type": "string"
+    },
+    "variavel": {
+      "type": "string"
+    },
+    "valor": {
+      "type": "number"
+    },
+    "unidade": {
+      "type": "string"
+    },
+    "incerteza_padrao": {
+      "type": "number",
+      "minimum": 0
+    },
+    "angulo_graus": {
+      "type": "number",
+      "minimum": 0,
+      "exclusiveMaximum": 360
+    },
+    "lote_produto_id": {
+      "type": "string"
+    },
+    "qualidade": {
+      "type": "string",
+      "enum": [
+        "valida",
+        "suspeita",
+        "invalida",
+        "nao_avaliada"
+      ]
+    },
+    "modelo_versao": {
+      "type": "string"
+    },
+    "proveniencia": {
+      "type": "string",
+      "minLength": 1
+    },
+    "metadados": {
+      "type": "object"
+    },
+    "cabeceira_id": {
+      "type": "string",
+      "enum": [
+        "A",
+        "B"
+      ]
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "tipo": {
+            "const": "medicao"
+          }
+        },
+        "required": [
+          "tipo"
+        ]
+      },
+      "then": {
+        "required": [
+          "variavel",
+          "valor",
+          "unidade",
+          "sensor_id"
+        ]
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "tipo": {
+            "const": "valor_calculado"
+          }
+        },
+        "required": [
+          "tipo"
+        ]
+      },
+      "then": {
+        "required": [
+          "variavel",
+          "valor",
+          "unidade",
+          "modelo_versao"
+        ]
+      }
+    }
+  ],
+  "additionalProperties": false
+}
