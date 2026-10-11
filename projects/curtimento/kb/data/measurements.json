@@ -1,0 +1,159 @@
+[
+  {
+    "id": "ph_banho",
+    "title": "pH do banho",
+    "unit": "pH",
+    "kind": "direta",
+    "method": "Eletrodo em contato representativo com banho e calibração",
+    "does_not_prove": "pH do interior da pele",
+    "sources": [
+      "S001",
+      "S007"
+    ]
+  },
+  {
+    "id": "ph_couro",
+    "title": "pH do couro por extrato aquoso",
+    "unit": "pH",
+    "kind": "laboratorio",
+    "method": "ISO 4045:2018",
+    "does_not_prove": "Perfil transversal contínuo de pH",
+    "sources": [
+      "S008"
+    ]
+  },
+  {
+    "id": "temperatura",
+    "title": "Temperatura do banho",
+    "unit": "°C",
+    "kind": "direta",
+    "method": "Sonda térmica em contato com banho",
+    "does_not_prove": "Calor de reação isolado de aquecimento e perdas",
+    "sources": [
+      "S001",
+      "S002"
+    ]
+  },
+  {
+    "id": "condutividade",
+    "title": "Condutividade elétrica do banho",
+    "unit": "mS/cm",
+    "kind": "direta",
+    "method": "Condutivímetro com compensação de temperatura adequada",
+    "does_not_prove": "Concentração de cada espécie química",
+    "sources": [
+      "S001"
+    ]
+  },
+  {
+    "id": "rpm",
+    "title": "Rotação do fulão",
+    "unit": "rev/min",
+    "kind": "direta",
+    "method": "Encoder ou saída confiável do acionamento",
+    "does_not_prove": "Deformação real do couro",
+    "sources": [
+      "S003"
+    ]
+  },
+  {
+    "id": "posicao_angular",
+    "title": "Ângulo do fulão",
+    "unit": "°",
+    "kind": "direta",
+    "method": "Encoder + referência angular",
+    "does_not_prove": "Posição individual das peles",
+    "sources": []
+  },
+  {
+    "id": "potencia_eletrica",
+    "title": "Potência elétrica do motor",
+    "unit": "kW",
+    "kind": "direta",
+    "method": "Medição de potência ativa no acionamento",
+    "does_not_prove": "Potência útil transmitida ao couro",
+    "sources": []
+  },
+  {
+    "id": "pressao_local",
+    "title": "Pressão local no ladrão",
+    "unit": "Pa",
+    "kind": "direta",
+    "method": "Transdutor com referência de pressão documentada",
+    "does_not_prove": "Volume real com peles e escoamento dinâmico",
+    "sources": []
+  },
+  {
+    "id": "volume_agua",
+    "title": "Água adicionada ou drenada",
+    "unit": "L",
+    "kind": "direta",
+    "method": "Vazão integrada e registros de entradas/saídas",
+    "does_not_prove": "Volume livre exato deslocado pelas peles",
+    "sources": []
+  },
+  {
+    "id": "cromo_banho",
+    "title": "Concentração de cromo em banho",
+    "unit": "g/L",
+    "kind": "laboratorio",
+    "method": "Método analítico especificado para a matriz e espécie",
+    "does_not_prove": "Fixação química no colágeno",
+    "sources": [
+      "S007"
+    ]
+  },
+  {
+    "id": "cromo_couro",
+    "title": "Cromo total no couro",
+    "unit": "% Cr2O3",
+    "kind": "laboratorio",
+    "method": "ISO 5398-1:2018, nas condições de sua aplicação",
+    "does_not_prove": "Especiação ou ligação molecular exata",
+    "sources": [
+      "S009"
+    ]
+  },
+  {
+    "id": "temperatura_retracao",
+    "title": "Temperatura de retração",
+    "unit": "°C",
+    "kind": "laboratorio",
+    "method": "ISO 3380:2015 até 100°C",
+    "does_not_prove": "Distribuição de cromo ou qualidade completa",
+    "sources": [
+      "S010"
+    ]
+  },
+  {
+    "id": "materia_volatil",
+    "title": "Matéria volátil do couro",
+    "unit": "%",
+    "kind": "laboratorio",
+    "method": "ISO 4684:2005",
+    "does_not_prove": "Teor exato de água",
+    "sources": [
+      "S011"
+    ]
+  },
+  {
+    "id": "massa_peles",
+    "title": "Massa de peles do lote",
+    "unit": "kg",
+    "kind": "direta",
+    "method": "Pesagem rastreada por operação",
+    "does_not_prove": "Teor de água ou distribuição de massa",
+    "sources": []
+  },
+  {
+    "id": "sulfeto_residual",
+    "title": "Sulfeto residual",
+    "unit": "g/L",
+    "kind": "laboratorio",
+    "method": "Método apropriado, declarado no protocolo do processo",
+    "does_not_prove": "Taxa de depilação por si só",
+    "sources": [
+      "S005"
+    ]
+  }
+]

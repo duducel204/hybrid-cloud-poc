@@ -1,0 +1,34 @@
+{
+  "name": "base_curtimento",
+  "version": "0.1.0",
+  "language": "pt-BR",
+  "purpose": "Conhecimento científico estruturado, com IDs de fonte e limites de interpretação, para observador físico-químico de fulões.",
+  "read_order": [
+    "README.md",
+    "AGENTS.md",
+    "kb/README.md",
+    "kb/data/sources.json",
+    "kb/data/processes.json",
+    "kb/data/knowledge.json",
+    "kb/data/chemistry.json",
+    "kb/data/models.json",
+    "kb/data/measurements.json",
+    "kb/data/evidence.json",
+    "kb/data/relations.json",
+    "docs/04-evidencias-e-hipoteses.md"
+  ],
+  "collections": [
+    "sources",
+    "processes",
+    "chemistry",
+    "knowledge",
+    "evidence",
+    "models",
+    "measurements",
+    "relations"
+  ],
+  "source_of_truth": "kb/data/*.json",
+  "sqlite": "derivado_em_ambiente_local",
+  "safety": "sem_controle_industrial_automatizado",
+  "privacy": "repositorio_publico_sem_dados_confidenciais"
+}

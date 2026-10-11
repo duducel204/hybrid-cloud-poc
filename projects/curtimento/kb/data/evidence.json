@@ -1,0 +1,26 @@
+[
+  {
+    "id": "E001",
+    "claim_id": "K010",
+    "study_source_id": "S003",
+    "design": "Experimento com fulão rotativo e simulação CFD, em condições específicas.",
+    "controlled_variable": "rotacao",
+    "comparison": "5 vs 20 rpm",
+    "reported_effect": "Aumento de 41% na duração do estado de rolamento do couro.",
+    "interpretable_as": "Mudança na distribuição do tempo entre estados de movimento sob as condições do estudo.",
+    "not_interpretable_as": "Aumento de 41% na absorção, condição ótima de 20 rpm ou resultado universal.",
+    "data_quality": "resultado_no_resumo_publicado"
+  },
+  {
+    "id": "E002",
+    "claim_id": "K011",
+    "study_source_id": "S003",
+    "design": "Simulação CFD articulada a experimento de curtimento.",
+    "controlled_variable": "estado_de_movimento",
+    "comparison": "rolling, slipping, elevating, hanging",
+    "reported_effect": "Maior taxa simulada de transferência de massa no estado de rolamento.",
+    "interpretable_as": "Evidência de ligação entre forma do movimento e transferência de massa nas condições do artigo.",
+    "not_interpretable_as": "Coeficiente k_m conhecido para qualquer fulão ou inferência automática do estado das peles.",
+    "data_quality": "resultado_no_resumo_publicado"
+  }
+]
