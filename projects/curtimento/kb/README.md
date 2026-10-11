@@ -12,6 +12,8 @@
 - `models.json`: equações físicas/algébricas conhecidas com unidades e hipóteses.
 - `measurements.json`: grandezas e métodos de medição, inclusive o que **não** demonstram.
 - `relations.json`: relações entre etapas e variáveis que seguem com o couro.
+- `raw_material_routes.json`: diferenças de condição inicial entre pele salgada e pele verde do frigorífico.
+- `process_matrix.json`: matriz etapa → mecanismo → variáveis → modelo → sensor → ensaio → eficiência, com páginas da fonte BASF.
 
 ## Consultar sem infraestrutura
 

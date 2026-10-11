@@ -1,0 +1,265 @@
+[
+  {
+    "id": "PM001",
+    "stage": "remolho",
+    "source_id": "S012",
+    "source_pages": [
+      "44–55"
+    ],
+    "known_mechanism": "Reidratação e remoção de sal e materiais solúveis.",
+    "required_variables": [
+      "rota_materia_prima",
+      "massa_inicial",
+      "volume_banho",
+      "tempo",
+      "temperatura",
+      "sal_inicial"
+    ],
+    "model_ids": [
+      "M005"
+    ],
+    "signals": [
+      "temperatura",
+      "condutividade",
+      "volume_agua",
+      "ph_banho"
+    ],
+    "independent_checks": [
+      "massa_umida_seca",
+      "sal_residual",
+      "hidratacao"
+    ],
+    "efficiency_target": "Água e tempo por reidratação e remoção úteis.",
+    "limits": "Condutividade não identifica NaCl isoladamente; duas rotas necessitam estados iniciais diferentes.",
+    "status": "matriz_inicial_literatura_e_engenharia"
+  },
+  {
+    "id": "PM002",
+    "stage": "caleiro",
+    "source_id": "S012",
+    "source_pages": [
+      "56–64"
+    ],
+    "known_mechanism": "Depilação e abertura estrutural da pele por ações alcalinas e redutoras.",
+    "required_variables": [
+      "atividade_sulfeto",
+      "alcalinidade",
+      "tempo",
+      "temperatura",
+      "rpm",
+      "carga_pele"
+    ],
+    "model_ids": [
+      "M001",
+      "M002",
+      "M004"
+    ],
+    "signals": [
+      "ph_banho",
+      "sulfeto_residual",
+      "temperatura",
+      "rpm",
+      "potencia_eletrica"
+    ],
+    "independent_checks": [
+      "depilacao",
+      "inchamento",
+      "integridade_flor"
+    ],
+    "efficiency_target": "Depilação e abertura sem excesso de ataque estrutural.",
+    "limits": "pH não é concentração de sulfeto; energia elétrica não mede ação sobre fibra.",
+    "status": "matriz_inicial_literatura_e_engenharia"
+  },
+  {
+    "id": "PM003",
+    "stage": "divisao",
+    "source_id": "S012",
+    "source_pages": [
+      "53",
+      "115–117"
+    ],
+    "known_mechanism": "Transformação mecânica e separação de frações da pele.",
+    "required_variables": [
+      "massa_antes",
+      "massa_depois",
+      "espessura",
+      "proporcao_flor_raspa"
+    ],
+    "model_ids": [],
+    "signals": [
+      "massa_peles"
+    ],
+    "independent_checks": [
+      "massa_flor_raspa",
+      "espessura_por_posicao"
+    ],
+    "efficiency_target": "Rendimento de massa e espessura.",
+    "limits": "Posição da operação na sequência depende da rota.",
+    "status": "matriz_inicial_literatura_e_engenharia"
+  },
+  {
+    "id": "PM004",
+    "stage": "desencalagem",
+    "source_id": "S012",
+    "source_pages": [
+      "65–68"
+    ],
+    "known_mechanism": "Redução de alcalinidade e remoção de cálcio.",
+    "required_variables": [
+      "ph_interno_inicial",
+      "calcio_residual",
+      "dosagem",
+      "tempo",
+      "temperatura"
+    ],
+    "model_ids": [
+      "M005"
+    ],
+    "signals": [
+      "ph_banho",
+      "temperatura",
+      "condutividade"
+    ],
+    "independent_checks": [
+      "ph_couro",
+      "calcio_residual"
+    ],
+    "efficiency_target": "Remoção e uniformidade de desencalagem.",
+    "limits": "pH do banho sozinho não demonstra descalcinação do centro.",
+    "status": "matriz_inicial_literatura_e_engenharia"
+  },
+  {
+    "id": "PM005",
+    "stage": "purga",
+    "source_id": "S012",
+    "source_pages": [
+      "69–70"
+    ],
+    "known_mechanism": "Ação enzimática sobre componentes não colagênicos.",
+    "required_variables": [
+      "atividade_enzimatica_real",
+      "ph",
+      "temperatura",
+      "tempo",
+      "condicao_inicial_pele"
+    ],
+    "model_ids": [
+      "M007"
+    ],
+    "signals": [
+      "temperatura",
+      "ph_banho"
+    ],
+    "independent_checks": [
+      "ensaio_atividade_enzimatica",
+      "resultado_purga",
+      "avaliacao_flor"
+    ],
+    "efficiency_target": "Transformação útil por atividade de enzima.",
+    "limits": "Não usar Arrhenius sem parâmetros da enzima e sistema específicos.",
+    "status": "matriz_inicial_literatura_e_engenharia"
+  },
+  {
+    "id": "PM006",
+    "stage": "piquel",
+    "source_id": "S012",
+    "source_pages": [
+      "73–75"
+    ],
+    "known_mechanism": "Acidificação controlada da pele antes do curtimento ao cromo.",
+    "required_variables": [
+      "composicao_sais",
+      "quantidade_acido",
+      "ph_interno_inicial",
+      "espessura",
+      "temperatura"
+    ],
+    "model_ids": [
+      "M005",
+      "M006"
+    ],
+    "signals": [
+      "ph_banho",
+      "condutividade",
+      "temperatura"
+    ],
+    "independent_checks": [
+      "perfil_ph_couro",
+      "uniformidade_piquel"
+    ],
+    "efficiency_target": "Uniformidade de acidificação com consumo controlado.",
+    "limits": "pH e condutividade do banho não mostram sozinhos o gradiente interno.",
+    "status": "matriz_inicial_literatura_e_engenharia"
+  },
+  {
+    "id": "PM007",
+    "stage": "curtimento_cromo",
+    "source_id": "S012",
+    "source_pages": [
+      "76–98"
+    ],
+    "known_mechanism": "Penetração e interação de complexos de Cr(III) com a matriz colagênica.",
+    "required_variables": [
+      "cr_ativo_inicial",
+      "basicidade_inicial",
+      "composicao_complexos",
+      "ph",
+      "temperatura",
+      "tempo",
+      "movimento_real"
+    ],
+    "model_ids": [
+      "M005",
+      "M006"
+    ],
+    "signals": [
+      "cromo_banho",
+      "ph_banho",
+      "temperatura",
+      "rpm",
+      "potencia_eletrica"
+    ],
+    "independent_checks": [
+      "cromo_couro",
+      "distribuicao_cromo",
+      "temperatura_retracao"
+    ],
+    "efficiency_target": "Aproveitamento útil e distribuição do cromo.",
+    "limits": "Esgotamento não equivale a fixação; maior absorção pode prejudicar uniformidade.",
+    "status": "matriz_inicial_literatura_e_engenharia"
+  },
+  {
+    "id": "PM008",
+    "stage": "basificacao",
+    "source_id": "S012",
+    "source_pages": [
+      "92–93",
+      "98"
+    ],
+    "known_mechanism": "Alteração da basicidade do sistema e condições de ligação do cromo ao couro.",
+    "required_variables": [
+      "basicidade_inicial",
+      "basicidade_desejada",
+      "cr2o3_g_por_L",
+      "fator_basificante",
+      "qualidade_lote_produto"
+    ],
+    "model_ids": [
+      "M008"
+    ],
+    "signals": [
+      "ph_banho",
+      "temperatura",
+      "cromo_banho"
+    ],
+    "independent_checks": [
+      "analise_basicidade",
+      "cromo_couro",
+      "distribuicao_cromo",
+      "temperatura_retracao"
+    ],
+    "efficiency_target": "Demanda teórica e resultado útil da basificação.",
+    "limits": "Fórmula do manual não determina automaticamente cinética, fixação, qualidade ou dosagem industrial autorizada.",
+    "status": "matriz_inicial_literatura_e_engenharia"
+  }
+]

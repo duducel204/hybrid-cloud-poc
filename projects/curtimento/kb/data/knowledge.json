@@ -193,5 +193,83 @@
     ],
     "limits": "A dinâmica depende de geometria, carga e material; relação quantitativa exige identificação.",
     "status": "inferencia_fisica"
+  },
+  {
+    "id": "K019",
+    "stage": "remolho",
+    "claim": "O manual diferencia conservação com sal para períodos longos e comercialização de peles verdes com conservação curta por resfriamento.",
+    "source_ids": [
+      "S012"
+    ],
+    "limits": "Duas condições iniciais distintas; não assumir a mesma massa, água interna ou teor residual de NaCl.",
+    "status": "documentado",
+    "source_pages": [
+      "24 e 44–55"
+    ]
+  },
+  {
+    "id": "K020",
+    "stage": "remolho",
+    "claim": "O manual descreve o remolho como recuperação de hidratação e retirada de sujidade, proteínas solúveis e agentes conservantes.",
+    "source_ids": [
+      "S012"
+    ],
+    "limits": "Eficácia depende da matéria-prima; diferença de composição banho/pele não implica reidratação completa.",
+    "status": "documentado",
+    "source_pages": [
+      "54–55"
+    ]
+  },
+  {
+    "id": "K021",
+    "stage": "curtimento_cromo",
+    "claim": "O manual define basicidade de curtentes minerais como proporção de grupos hidroxila em relação às valências totais do metal complexante.",
+    "source_ids": [
+      "S012"
+    ],
+    "limits": "Definição Schorlemmer; requer composição do curtente e forma apropriada de expressar teor de cromo.",
+    "status": "documentado",
+    "source_pages": [
+      "92"
+    ]
+  },
+  {
+    "id": "K022",
+    "stage": "basificacao",
+    "claim": "O manual apresenta uma fórmula de cálculo teórico para elevar basicidade de licor de cromo usando diferença de basicidade, teor de Cr2O3 (g/L) e fator do basificante.",
+    "source_ids": [
+      "S012"
+    ],
+    "limits": "Cálculo estequiométrico tabulado, não confirmação de reação/fixação, nem prescrição universal de dosagem. Deve considerar pureza, composição, especiação, tamponamento e condições reais.",
+    "status": "documentado",
+    "source_pages": [
+      "92–93"
+    ]
+  },
+  {
+    "id": "K023",
+    "stage": "mecanica",
+    "claim": "O manual alerta que, sob carga excessiva, a velocidade de revolvimento do fardo de couros pode ficar abaixo do regime apropriado e aumentar RPM do fulão pode não corrigir a deficiência.",
+    "source_ids": [
+      "S012"
+    ],
+    "limits": "Afirmação qualitativa do manual; a fórmula ou diagrama gráfico específico não foi extraído de forma confiável do texto consultado.",
+    "status": "documentado",
+    "source_pages": [
+      "307"
+    ]
+  },
+  {
+    "id": "K024",
+    "stage": "mecanica",
+    "claim": "O manual fornece fórmula geométrica para volume interno aproximado de um fulão cilíndrico a partir do diâmetro e comprimento internos.",
+    "source_ids": [
+      "S012"
+    ],
+    "limits": "Volume geométrico vazio não é volume real de banho durante rotação com carga e ladrões anulares.",
+    "status": "documentado",
+    "source_pages": [
+      "306"
+    ]
   }
 ]

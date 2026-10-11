@@ -12,7 +12,8 @@ ROOT = Path(__file__).resolve().parent
 DATA = ROOT / "data"
 COLLECTIONS = (
     "sources", "processes", "chemistry", "knowledge",
-    "evidence", "models", "measurements", "relations"
+    "evidence", "models", "measurements", "relations",
+    "raw_material_routes", "process_matrix"
 )
 
 def load():
@@ -80,6 +81,18 @@ def validate(data):
         check_ref(item, "study_source_id", "sources", False)
         if not item.get("not_interpretable_as"):
             errors.append(f"{item.get('id')}: falta limite de interpretacao")
+    for item in data["raw_material_routes"]:
+        check_ref(item, "source_ids", "sources")
+        for ref in item.get("stage_impacts", []):
+            check_ref(ref, "stage", "processes", False)
+        if not item.get("initial_conditions") or not item.get("tracked_inputs"):
+            errors.append(f"{item.get('id')}: missing raw-material route content")
+    for item in data["process_matrix"]:
+        check_ref(item, "source_id", "sources", False)
+        check_ref(item, "stage", "processes", False)
+        check_ref(item, "model_ids", "models")
+        if not item.get("known_mechanism") or not item.get("independent_checks") or not item.get("limits"):
+            errors.append(f"{item.get('id')}: incomplete process matrix")
     for item in data["sources"]:
         if not item.get("url") or not item.get("title") or not item.get("access"):
             errors.append(f"{item.get('id')}: fonte incompleta")

@@ -105,5 +105,24 @@
     "url": "https://www.iso.org/standard/31308.html",
     "scope": "Matéria volátil; não determina exatamente o teor de água.",
     "access": "somente_resumo_publico"
+  },
+  {
+    "id": "S012",
+    "title": "Vade-mécum do Curtidor: 4ª edição, revisada e ampliada",
+    "publisher": "BASF Aktiengesellschaft",
+    "year": 2004,
+    "edition": "4ª",
+    "publication_date": "2004-04",
+    "translator": [
+      "Dieter Lehmann",
+      "Felipe K. Schuck"
+    ],
+    "kind": "technical_reference",
+    "url": "https://pt.scribd.com/document/525888183/Vade-mecum-Do-Curtidor",
+    "scope": "Matéria-prima verde/salgada, estruturas de pele e proteínas, remolho, depilação e caleiro, descalcinação, purga, píquel, cromo, basicidade, métodos de ensaio e cálculos geométricos/mecânicos.",
+    "access": "texto_disponivel_em_plataforma_de_terceiros",
+    "page_count": 370,
+    "rights": "© BASF. Manter só metadados, fatos breves e equações com atribuição; não republicar livro.",
+    "access_limits": "Versão exibida no Scribd; fórmulas gráficas e figuras podem não ser capturadas pelo texto extraído. A 5ª edição não foi verificada nesta ingestão."
   }
 ]

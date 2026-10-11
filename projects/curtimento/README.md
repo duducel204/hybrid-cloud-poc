@@ -6,11 +6,12 @@
 
 1. **[Base de conhecimento pesquisável](kb/README.md)**: conteúdo factual estruturado em JSON; fontes, oito etapas, química, medições, modelos e evidências.
 2. [Protocolo de atuação das IAs](AGENTS.md): como consultar e acrescentar conhecimento sem reinventar ou misturar hipóteses e fatos.
-3. [Processo e química](docs/01-processo.md) e [modelos físicos](docs/02-modelo-fisico-quimico.md).
-4. [Geometria e sensores candidatos](docs/03-sensores-e-geometria.md).
-5. [Hipóteses e limites](docs/04-evidencias-e-hipoteses.md).
-6. [Forward/Backward](docs/05-metodo-forward-backward.md) e [plano de validação](docs/06-plano-validacao.md).
-7. [Referências comentadas](references/README.md) e [schema de observações futuras](schemas/observacao.schema.json).
+3. [Vade-mécum BASF 2004: índice crítico e fórmulas](references/BASF-VADEMECUM-2004.md).
+4. [Processo e química](docs/01-processo.md) e [modelos físicos](docs/02-modelo-fisico-quimico.md).
+5. [Geometria e sensores candidatos](docs/03-sensores-e-geometria.md).
+6. [Hipóteses e limites](docs/04-evidencias-e-hipoteses.md).
+7. [Forward/Backward](docs/05-metodo-forward-backward.md) e [plano de validação](docs/06-plano-validacao.md).
+8. [Referências comentadas](references/README.md) e [schema de observações futuras](schemas/observacao.schema.json).
 
 **Primeiro comando útil:** `python projects/curtimento/kb/query.py search cromo`.
 **Verificar integridade:** `python projects/curtimento/kb/query.py validate`.
