@@ -1,24 +1,32 @@
 # Fontes e proveniência
 
-Este é um **índice inicial para conferência**, não uma bibliografia validada integralmente. URLs abaixo constam dos materiais compartilhados na conversa. Antes de usar valores numéricos em cálculos, abrir a publicação original, identificar edição/autor/DOI, extrair unidades e condições experimentais.
+## Catálogo canônico
 
-## Materiais trazidos pelo usuário
+**[kb/data/sources.json](../kb/data/sources.json)** contém fontes com ID estável (S001 etc.), URLs, escopo e grau de acesso. **[kb/data/knowledge.json](../kb/data/knowledge.json)** liga afirmações às fontes, **[kb/data/evidence.json](../kb/data/evidence.json)** registra resultados experimentais.
 
-- *IoT no Curtimento de Couros: Automação e Benchmarking* (17 páginas; recebido em 2026-10-11): panorama de processo, transmissão, instrumentação e fabricantes. É material secundário, contém afirmações fortes não comprovadas; conferir em fontes primárias.
-- *Pesquisa aprofundada: o fulão como sistema físico-químico inteligente*, Relatório 1 (2026-10-11): movimento × transporte, sensores passivos, patentes, eficiência por etapa e variação entre lotes de insumo. É síntese de pesquisa; resultados citados exigem conferência.
-- Conversas e desenhos do usuário: geometria dos ladrões anulares, malha 4+4, sensores sem bateria, Forward/Backward, receitas inicialmente fixas. **Origem:** definição de projeto, não validação metrológica.
+Fontes prioritárias já identificadas:
+- BREF europeu para curtumes (JRC, 2013): [entrada S001](../kb/data/sources.json).
+- *Fabricação Moderna de Couro Vacum* (Leather Naturally/Buckman): S002.
+- Lin, Jiang, Wang, Zeng, Xie, Shi (JALCA, 2023): S003. DOI `10.34314/jalca.v118i11.8242`; resultado de 41% refere-se ao **tempo em movimento rolling**, não à absorção.
+- ISO 4045:2018 (pH do extrato aquoso do couro), ISO 5398-1:2018 (cromo total no couro) e ISO 3380:2015 (retração até 100°C): S008–S010; resumos oficiais, **não** reprodução de normas.
+- ISO 4684:2005 (matéria volátil, não teor exato de água): S011.
 
-## Documentos técnicos primários / materiais de processo a conferir
+## Estudos de balanço de massa incorporados
 
-- Buckman, *Fabricação Moderna de Couro Vacum*: https://www.buckman.com/wp-content/uploads/2023/01/Fabricacao-Moderna-de-Couro-Vacum-Portugues.pdf
-- CRQ-SP, *Tratamento químico de couros e peles*: https://crqsp.org.br/tratamento-quimico-de-couros-e-peles/
-- Referência europeia BREF (Tanning of Hides and Skins): https://eippcb.jrc.ec.europa.eu/reference/tanning-hides-and-skins-0
-- OlcinaGroup, equipamentos e geometria de fulões: https://www.olcinagroup.com/en/bombosymolinetas/
-- Estudo de Lin e colaboradores (JALCA, 2023) sobre movimento de peles e transporte de massa: **localizar e conferir artigo integral e condições experimentais**; não interpretar aumento de tempo em rolamento como igual aumento de absorção.
-- Sensores passivos em partes metálicas rotativas (exemplo de tecnologia transferível, não prova em fulões): https://pmc.ncbi.nlm.nih.gov/articles/PMC11511295/
-- Endress+Hauser, ISFET/Memosens CPS97E: https://www.endress.com/en/field-instruments-overview/liquid-analysis-product-overview/digital-pH-sensor-Memosens-CPS97E
-- Patente EP1157134B1, fulão de couro: https://patents.google.com/patent/EP1157134B1/en
+- **S013, UNIDO 2000:** cenário de balanços da ribeira ao acabamento. Dados de massa por corrente, repartição de Cr₂O₃ (p. 10) e formulação por base de pesagem (Anexo 1, p. 24–25). Texto integral consultado.
+- **S014, Aquim/UFRGS 2004:** dissertação sobre balanço de massa da ribeira e curtimento. Resumo e metadados consultados; não foram extraídos resultados quantitativos não verificados.
+- **S015, CETESB 2015:** Guia Técnico Ambiental de Curtumes, 2ª edição. Tabela 7 (p. 37) com balanço global, Tabela 8 (p. 38) com intervalos de água e texto sobre pele verde/salgada.
+- [Comparação e limitações de leitura](BALANCOS-UNIDO-UFRGS-CETESB.md)
+- [Balanços de referência em JSON](../kb/data/mass_balance_cases.json)
 
-## Tarefa bibliográfica
+## Materiais exploratórios compartilhados
 
-Para cada equação/parâmetro: registrar identificação da fonte, material estudado, condições de temperatura/pH, geometria/carga, faixa de aplicação, valores com unidade, incerteza e método de medição. Evitar usar patente ou catálogo como prova de desempenho científico.
+- *IoT no Curtimento de Couros: Automação e Benchmarking*, 17 páginas (2026-10-11).
+- *Pesquisa aprofundada: o fulão como sistema físico-químico inteligente*, Relatório 1 (2026-10-11).
+- Conversas, esquemas e definições do usuário: geometria do ladrão anular, distribuição candidata 4+4, energia por rotação, Forward/Backward, receita nominal fixa.
+
+Os materiais compartilhados ajudam a localizar hipóteses e fontes. **Não foram copiados integralmente** ao repositório público. Informações de fonte primária passaram por checagem antes de integrar o catálogo factual.
+
+## Próxima extração bibliográfica
+
+Cada novo artigo deve ter: fonte, DOI/URL, condição experimental, equipamento, pele, método, grandeza, unidade, intervalo, incerteza, resultado observado e limite de extrapolação. Sem esses dados, não usar valores como calibração industrial.

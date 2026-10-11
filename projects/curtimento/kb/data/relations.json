@@ -1,0 +1,89 @@
+[
+  {
+    "id": "R001",
+    "from": "remolho",
+    "to": "caleiro",
+    "carry": [
+      "hidratacao_pele",
+      "sal_residual"
+    ],
+    "interpretation": "Condição inicial de água/sal pode afetar a resposta na etapa seguinte.",
+    "status": "mecanismo_geral",
+    "source_ids": [
+      "S002"
+    ]
+  },
+  {
+    "id": "R002",
+    "from": "caleiro",
+    "to": "desencalagem",
+    "carry": [
+      "inchamento",
+      "alcalinidade",
+      "carga_residual"
+    ],
+    "interpretation": "Condição de caleiro altera demanda de desencalagem.",
+    "status": "mecanismo_geral",
+    "source_ids": [
+      "S001",
+      "S002"
+    ]
+  },
+  {
+    "id": "R003",
+    "from": "desencalagem",
+    "to": "purga",
+    "carry": [
+      "ph_couro",
+      "calcio_residual"
+    ],
+    "interpretation": "Ambiente químico deixado pela desencalagem condiciona atividade da purga.",
+    "status": "mecanismo_geral",
+    "source_ids": [
+      "S002",
+      "S006"
+    ]
+  },
+  {
+    "id": "R004",
+    "from": "purga",
+    "to": "piquel",
+    "carry": [
+      "estrutura_pele",
+      "ph_couro"
+    ],
+    "interpretation": "Preparação da pele constitui condição inicial da acidificação.",
+    "status": "mecanismo_geral",
+    "source_ids": [
+      "S002"
+    ]
+  },
+  {
+    "id": "R005",
+    "from": "piquel",
+    "to": "curtimento_cromo",
+    "carry": [
+      "ph_couro",
+      "composicao_ionica"
+    ],
+    "interpretation": "Condições de acidificação podem alterar penetração do curtente.",
+    "status": "mecanismo_geral",
+    "source_ids": [
+      "S007"
+    ]
+  },
+  {
+    "id": "R006",
+    "from": "curtimento_cromo",
+    "to": "basificacao",
+    "carry": [
+      "cromo_penetrado",
+      "ph_couro"
+    ],
+    "interpretation": "Distribuição e condições químicas antes da basificação condicionam resultado.",
+    "status": "mecanismo_geral",
+    "source_ids": [
+      "S007"
+    ]
+  }
+]

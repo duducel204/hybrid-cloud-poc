@@ -1,0 +1,30 @@
+name: Validar conhecimento do curtimento
+
+on:
+  pull_request:
+    paths:
+      - 'projects/curtimento/**'
+      - '.github/workflows/validar-curtimento.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  integridade:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validar referências, conteúdo e esquema das coleções
+        run: python projects/curtimento/kb/query.py validate
+      - name: Verificar exportação SQLite derivada dos fatos versionados
+        run: |
+          python projects/curtimento/kb/query.py build-db --output /tmp/curtimento-kb.sqlite
+          python - <<'PY'
+          import sqlite3
+          db=sqlite3.connect('/tmp/curtimento-kb.sqlite')
+          total=db.execute('SELECT COUNT(*) FROM entries').fetchone()[0]
+          assert total >= 50, f'Base inesperadamente vazia: {total}'
+          print(f'Base pesquisável OK: {total} registros')
+          PY

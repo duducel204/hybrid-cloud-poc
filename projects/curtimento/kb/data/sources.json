@@ -1,0 +1,178 @@
+[
+  {
+    "id": "S001",
+    "title": "Tanning of Hides and Skins, BREF",
+    "publisher": "European Commission, JRC",
+    "year": 2013,
+    "kind": "technical_reference",
+    "url": "https://bureau-industrial-transformation.jrc.ec.europa.eu/reference/tanning-hides-and-skins-0",
+    "scope": "Processos, consumo de recursos e melhores técnicas em curtumes de peles bovinas e ovinas.",
+    "access": "landing_page_verificada"
+  },
+  {
+    "id": "S002",
+    "title": "Fabricação Moderna de Couro Vacum",
+    "publisher": "Leather Naturally; reprodução autorizada pela Buckman",
+    "year": 2022,
+    "kind": "industry_guide",
+    "url": "https://www.buckman.com/wp-content/uploads/2023/01/Fabricacao-Moderna-de-Couro-Vacum-Portugues.pdf",
+    "scope": "Estrutura da pele, ribeira, curtimento, acabamento, propriedades e testes.",
+    "access": "publico"
+  },
+  {
+    "id": "S003",
+    "title": "Experimental and Computational Fluid Dynamics Investigation on Tanning Process in a Rotating Drum",
+    "publisher": "Journal of the American Leather Chemists Association",
+    "year": 2023,
+    "kind": "peer_reviewed_paper",
+    "doi": "10.34314/jalca.v118i11.8242",
+    "url": "https://journals.uc.edu/index.php/JALCA/article/view/8242",
+    "scope": "Em fulão experimental, movimento rolling e transferência de agente curtente; comparar 5 e 20 rpm.",
+    "access": "resumo_publico_verificado"
+  },
+  {
+    "id": "S004",
+    "title": "Soaking",
+    "publisher": "Buckman",
+    "kind": "technical_supplier",
+    "url": "https://www.buckman.com/applications/soaking/",
+    "scope": "Reidratação, remoção de sujidades, agentes umectantes e enzimas.",
+    "access": "pagina_verificada"
+  },
+  {
+    "id": "S005",
+    "title": "Liming",
+    "publisher": "Buckman",
+    "kind": "technical_supplier",
+    "url": "https://www.buckman.com/applications/liming/",
+    "scope": "Depilação e caleiro, auxiliares químicos e penetração de cal.",
+    "access": "pagina_verificada"
+  },
+  {
+    "id": "S006",
+    "title": "Deliming & Bating",
+    "publisher": "Buckman",
+    "kind": "technical_supplier",
+    "url": "https://www.buckman.com/applications/deliming-bating/",
+    "scope": "Desencalagem e purga enzimática; sistemas com menos nitrogênio.",
+    "access": "pagina_verificada"
+  },
+  {
+    "id": "S007",
+    "title": "Pickling, Tanning and Basification for Chrome Tanned Leathers",
+    "publisher": "Buckman",
+    "kind": "technical_supplier",
+    "url": "https://www.buckman.com/applications/pickling-tanning-and-basification-for-chrome-tanned-leathers/",
+    "scope": "Penetração dos ácidos, complexação do cromo, basificação controlada.",
+    "access": "pagina_verificada"
+  },
+  {
+    "id": "S008",
+    "title": "ISO 4045:2018 Leather, determination of pH and difference figure",
+    "publisher": "ISO",
+    "year": 2018,
+    "kind": "standard_abstract",
+    "url": "https://committee.iso.org/standard/73701.html?browse=ics",
+    "scope": "Método para pH e diferença de pH em extrato aquoso de couro, não banho.",
+    "access": "somente_resumo_publico"
+  },
+  {
+    "id": "S009",
+    "title": "ISO 5398-1:2018 Leather, determination of chromic oxide content, titration",
+    "publisher": "ISO",
+    "year": 2018,
+    "kind": "standard_abstract",
+    "url": "https://www.iso.org/standard/73703.html",
+    "scope": "Determinação de cromo total na solução preparada a partir de couro; não especifica estado de oxidação.",
+    "access": "somente_resumo_publico"
+  },
+  {
+    "id": "S010",
+    "title": "ISO 3380:2015 Leather, determination of shrinkage temperature up to 100 C",
+    "publisher": "ISO",
+    "year": 2015,
+    "kind": "standard_abstract",
+    "url": "https://www.iso.org/standard/61792.html",
+    "scope": "Determinação da temperatura de retração do couro até 100°C.",
+    "access": "somente_resumo_publico"
+  },
+  {
+    "id": "S011",
+    "title": "ISO 4684:2005 Leather, determination of volatile matter",
+    "publisher": "ISO",
+    "year": 2005,
+    "kind": "standard_abstract",
+    "url": "https://www.iso.org/standard/31308.html",
+    "scope": "Matéria volátil; não determina exatamente o teor de água.",
+    "access": "somente_resumo_publico"
+  },
+  {
+    "id": "S012",
+    "title": "Vade-mécum do Curtidor: 4ª edição, revisada e ampliada",
+    "publisher": "BASF Aktiengesellschaft",
+    "year": 2004,
+    "edition": "4ª",
+    "publication_date": "2004-04",
+    "translator": [
+      "Dieter Lehmann",
+      "Felipe K. Schuck"
+    ],
+    "kind": "technical_reference",
+    "url": "https://pt.scribd.com/document/525888183/Vade-mecum-Do-Curtidor",
+    "scope": "Matéria-prima verde/salgada, estruturas de pele e proteínas, remolho, depilação e caleiro, descalcinação, purga, píquel, cromo, basicidade, métodos de ensaio e cálculos geométricos/mecânicos.",
+    "access": "texto_disponivel_em_plataforma_de_terceiros",
+    "page_count": 370,
+    "rights": "© BASF. Manter só metadados, fatos breves e equações com atribuição; não republicar livro.",
+    "access_limits": "Versão exibida no Scribd; fórmulas gráficas e figuras podem não ser capturadas pelo texto extraído. A 5ª edição não foi verificada nesta ingestão."
+  },
+  {
+    "id": "S013",
+    "title": "Mass Balance in Leather Processing",
+    "publisher": "UNIDO",
+    "authors": [
+      "J. Buljan",
+      "G. Reich",
+      "J. Ludvik"
+    ],
+    "year": 2000,
+    "publication_date": "2000-08-09",
+    "kind": "technical_report",
+    "url": "https://www.unido.org/publications/ot/9654228/pdf",
+    "scope": "Balanços de massa desde ribeira até acabamento, distribuição de Cr2O3, colágeno, insumos, água, cenário de referência e formulação ilustrativa no Anexo 1.",
+    "access": "pdf_integral_30_paginas_conferido",
+    "limitations": "Curtume hipotético com dados, experiências e estimativas; resultados não são médias universais nem dados do equipamento do usuário.",
+    "page_count": 30
+  },
+  {
+    "id": "S014",
+    "title": "Balanço de massa: uma ferramenta para otimizar os processos de ribeira e curtimento",
+    "publisher": "Universidade Federal do Rio Grande do Sul",
+    "authors": [
+      "Patrice Monteiro de Aquim"
+    ],
+    "year": 2004,
+    "kind": "master_dissertation",
+    "url": "https://lume.ufrgs.br/handle/10183/5049",
+    "pdf_url": "https://lume.ufrgs.br/bitstream/10183/5049/1/000464394.pdf",
+    "scope": "Pesquisa acadêmica sobre balanço de massa, aproveitamento e perdas da pele até wet blue e aplicação em gestão de processos.",
+    "access": "resumo_e_metadados_academicos_verificados_pdf_integral_nao_aberto",
+    "limitations": "Não registrar valores de resultados, métodos específicos ou páginas internas sem acesso ao texto completo."
+  },
+  {
+    "id": "S015",
+    "title": "Guia Técnico Ambiental de Curtumes",
+    "publisher": "CETESB",
+    "authors": [
+      "Walter Alves Ferrari",
+      "José Wagner Faria Pacheco et al."
+    ],
+    "year": 2015,
+    "edition": "2ª revisada e atualizada",
+    "kind": "technical_environmental_guide",
+    "url": "https://repositorio.cetesb.sp.gov.br/bitstreams/efa182b5-ad26-4778-9a2f-f6028fc8ddfe/download",
+    "scope": "Processo industrial, insumos, distribuição de massa úmida/seca/água, práticas ambientais, consumo de água por etapa e diferenças entre peles verdes e salgadas.",
+    "access": "pdf_integral_128_paginas_conferido",
+    "limitations": "Tabela 7 é exemplo com valores médios e aproximações; faixas da Tabela 8 baseadas em outra fonte IULTCS; não extrapolar a qualquer fulão.",
+    "page_count": 128
+  }
+]

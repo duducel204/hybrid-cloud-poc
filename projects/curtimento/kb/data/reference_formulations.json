@@ -1,0 +1,156 @@
+[
+  {
+    "id": "RF001",
+    "source_id": "S013",
+    "source_pages": [
+      "24"
+    ],
+    "stage": "remolho",
+    "operation": "pre_remolho",
+    "basis": "massa_pele_salgada",
+    "basis_kg": 1000,
+    "items": [
+      {
+        "component": "agua",
+        "percent_mass": 150
+      },
+      {
+        "component": "tensoativo_comercial",
+        "percent_mass": 0.15
+      }
+    ]
+  },
+  {
+    "id": "RF002",
+    "source_id": "S013",
+    "source_pages": [
+      "24"
+    ],
+    "stage": "remolho",
+    "operation": "remolho_principal",
+    "basis": "massa_pele_salgada",
+    "basis_kg": 1000,
+    "items": [
+      {
+        "component": "agua",
+        "percent_mass": 150
+      },
+      {
+        "component": "tensoativo_comercial",
+        "percent_mass": 0.15
+      }
+    ]
+  },
+  {
+    "id": "RF003",
+    "source_id": "S013",
+    "source_pages": [
+      "24"
+    ],
+    "stage": "caleiro",
+    "operation": "caleiro_convencional",
+    "basis": "massa_pele_salgada",
+    "basis_kg": 1000,
+    "items": [
+      {
+        "component": "agua",
+        "percent_mass": 200
+      },
+      {
+        "component": "sulfeto_de_sodio_formulacao_60pct",
+        "percent_mass": 2.5,
+        "active_content_pct": 60
+      },
+      {
+        "component": "hidrossulfeto_de_sodio_formulacao_70pct",
+        "percent_mass": 1.5,
+        "active_content_pct": 70
+      },
+      {
+        "component": "hidroxido_calcio",
+        "percent_mass": 4
+      }
+    ]
+  },
+  {
+    "id": "RF004",
+    "source_id": "S013",
+    "source_pages": [
+      "24"
+    ],
+    "stage": "desencalagem",
+    "operation": "desencalagem_e_purga_conjuntas",
+    "basis": "massa_pele_caleirada_nao_dividida",
+    "basis_kg": 1100,
+    "items": [
+      {
+        "component": "agua",
+        "percent_mass": 200
+      },
+      {
+        "component": "sais_amonio",
+        "percent_mass": 2.5
+      },
+      {
+        "component": "acidos_fracos",
+        "percent_mass": 0.8
+      },
+      {
+        "component": "preparados_enzimaticos",
+        "percent_mass": 0.5
+      }
+    ]
+  },
+  {
+    "id": "RF005",
+    "source_id": "S013",
+    "source_pages": [
+      "25"
+    ],
+    "stage": "piquel",
+    "operation": "piquel",
+    "basis": "massa_pele_caleirada_nao_dividida",
+    "basis_kg": 1100,
+    "items": [
+      {
+        "component": "agua",
+        "percent_mass": 50
+      },
+      {
+        "component": "NaCl",
+        "percent_mass": 5
+      },
+      {
+        "component": "acidos_nao_especificados",
+        "percent_mass": 1
+      }
+    ]
+  },
+  {
+    "id": "RF006",
+    "source_id": "S013",
+    "source_pages": [
+      "25"
+    ],
+    "stage": "curtimento_cromo",
+    "operation": "curtimento_e_basificacao",
+    "basis": "massa_pele_caleirada_nao_dividida",
+    "basis_kg": 1100,
+    "items": [
+      {
+        "component": "agua",
+        "percent_mass": 70
+      },
+      {
+        "component": "sulfato_basico_cromo_comercial",
+        "percent_mass": 8,
+        "active_content_pct": 25,
+        "active_basis": "Cr2O3"
+      },
+      {
+        "component": "agente_basificante",
+        "percent_mass": 0.7
+      }
+    ]
+  }
+]

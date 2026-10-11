@@ -1,0 +1,179 @@
+[
+  {
+    "id": "remolho",
+    "order": 1,
+    "name": "Remolho",
+    "mechanism": "Reidratar peles e remover sal e materiais solúveis.",
+    "observables": [
+      "temperatura",
+      "ph_banho",
+      "condutividade",
+      "volume_agua"
+    ],
+    "outcomes": [
+      "hidratacao_pele",
+      "sal_residual"
+    ],
+    "source_ids": [
+      "S001",
+      "S002",
+      "S004"
+    ],
+    "notes": null
+  },
+  {
+    "id": "caleiro",
+    "order": 2,
+    "name": "Depilação e caleiro",
+    "mechanism": "Remover pelos e modificar alcalinidade/inchamento e estrutura fibrosa.",
+    "observables": [
+      "temperatura",
+      "ph_banho",
+      "sulfeto_residual",
+      "rpm",
+      "volume_agua"
+    ],
+    "outcomes": [
+      "depilacao",
+      "inchamento",
+      "integridade_flor"
+    ],
+    "source_ids": [
+      "S001",
+      "S002",
+      "S005"
+    ],
+    "notes": null
+  },
+  {
+    "id": "divisao",
+    "order": 3,
+    "name": "Descarne e divisão",
+    "mechanism": "Separar tecido subcutâneo e/ou dividir flor e raspa; a posição da operação varia conforme a rota.",
+    "observables": [
+      "massa_peles",
+      "espessura"
+    ],
+    "outcomes": [
+      "massa_flor",
+      "massa_raspa",
+      "distribuicao_espessura"
+    ],
+    "source_ids": [
+      "S001",
+      "S002"
+    ],
+    "notes": "Etapa mecânica, não reação química; pode ocorrer antes ou depois do curtimento."
+  },
+  {
+    "id": "desencalagem",
+    "order": 4,
+    "name": "Desencalagem",
+    "mechanism": "Reduzir alcalinidade da pele e remover cálcio residual.",
+    "observables": [
+      "ph_banho",
+      "temperatura",
+      "tempo"
+    ],
+    "outcomes": [
+      "ph_couro",
+      "calcio_residual"
+    ],
+    "source_ids": [
+      "S001",
+      "S002",
+      "S006"
+    ],
+    "notes": null
+  },
+  {
+    "id": "purga",
+    "order": 5,
+    "name": "Purga",
+    "mechanism": "Empregar enzimas para remover componentes não colagênicos indesejados.",
+    "observables": [
+      "ph_banho",
+      "temperatura",
+      "tempo"
+    ],
+    "outcomes": [
+      "resultado_purga",
+      "atividade_enzimatica"
+    ],
+    "source_ids": [
+      "S002",
+      "S006"
+    ],
+    "notes": null
+  },
+  {
+    "id": "piquel",
+    "order": 6,
+    "name": "Píquel",
+    "mechanism": "Acidificar e preparar a pele para a penetração do curtente, controlando inchamento ácido.",
+    "observables": [
+      "ph_banho",
+      "temperatura",
+      "condutividade",
+      "tempo"
+    ],
+    "outcomes": [
+      "ph_couro",
+      "uniformidade_acidificacao"
+    ],
+    "source_ids": [
+      "S001",
+      "S002",
+      "S007"
+    ],
+    "notes": null
+  },
+  {
+    "id": "curtimento_cromo",
+    "order": 7,
+    "name": "Curtimento ao cromo",
+    "mechanism": "Promover transporte de complexos de Cr(III) e interação com colágeno.",
+    "observables": [
+      "ph_banho",
+      "temperatura",
+      "cromo_banho",
+      "rpm",
+      "volume_agua"
+    ],
+    "outcomes": [
+      "cromo_couro",
+      "perfil_cromo",
+      "temperatura_retracao"
+    ],
+    "source_ids": [
+      "S001",
+      "S002",
+      "S007",
+      "S009",
+      "S010"
+    ],
+    "notes": null
+  },
+  {
+    "id": "basificacao",
+    "order": 8,
+    "name": "Basificação",
+    "mechanism": "Modificar condições ácido-base para favorecer a ligação do curtente e a estabilidade do couro.",
+    "observables": [
+      "ph_banho",
+      "temperatura",
+      "tempo"
+    ],
+    "outcomes": [
+      "distribuicao_cromo",
+      "temperatura_retracao"
+    ],
+    "source_ids": [
+      "S002",
+      "S007",
+      "S009",
+      "S010"
+    ],
+    "notes": null
+  }
+]

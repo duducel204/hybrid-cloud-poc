@@ -1,0 +1,405 @@
+[
+  {
+    "id": "K001",
+    "stage": "remolho",
+    "claim": "O remolho visa reidratar a pele e remover sal e sujidades solúveis.",
+    "source_ids": [
+      "S001",
+      "S002",
+      "S004"
+    ],
+    "limits": "A taxa de reidratação depende da matéria-prima, conservação e condições de operação.",
+    "status": "documentado"
+  },
+  {
+    "id": "K002",
+    "stage": "caleiro",
+    "claim": "No caleiro, a depilação e o tratamento alcalino alteram a estrutura fibrosa e o inchamento da pele.",
+    "source_ids": [
+      "S001",
+      "S002",
+      "S005"
+    ],
+    "limits": "Não implica relação linear ou universal entre pH do banho e inchamento.",
+    "status": "documentado"
+  },
+  {
+    "id": "K003",
+    "stage": "caleiro",
+    "claim": "O sulfeto, em sistemas convencionais de depilação, participa da degradação da queratina do pelo.",
+    "source_ids": [
+      "S001",
+      "S002"
+    ],
+    "limits": "Reações e dose dependem do sistema; também existem sistemas de baixo sulfeto.",
+    "status": "documentado"
+  },
+  {
+    "id": "K004",
+    "stage": "desencalagem",
+    "claim": "A desencalagem busca reduzir a alcalinidade e remover cal/cálcio residual da pele.",
+    "source_ids": [
+      "S002",
+      "S006"
+    ],
+    "limits": "pH do banho não equivale ao estado ácido-base no interior da pele.",
+    "status": "documentado"
+  },
+  {
+    "id": "K005",
+    "stage": "purga",
+    "claim": "Na purga, enzimas auxiliam a remoção de componentes não colagênicos, modificando propriedades da flor.",
+    "source_ids": [
+      "S002",
+      "S006"
+    ],
+    "limits": "Atividade de cada formulação deve ser medida ou documentada.",
+    "status": "documentado"
+  },
+  {
+    "id": "K006",
+    "stage": "piquel",
+    "claim": "O píquel utiliza acidificação para preparar a pele para curtimento, exigindo controle de penetração e inchamento.",
+    "source_ids": [
+      "S001",
+      "S002",
+      "S007"
+    ],
+    "limits": "Faixas e sequência de adição variam com a rota e formulação.",
+    "status": "documentado"
+  },
+  {
+    "id": "K007",
+    "stage": "curtimento_cromo",
+    "claim": "Curtimento ao cromo utiliza complexos de Cr(III) e requer distinguir difusão, absorção e interação com a matriz do colágeno.",
+    "source_ids": [
+      "S001",
+      "S002",
+      "S007"
+    ],
+    "limits": "Desaparecimento do cromo do banho não prova fixação.",
+    "status": "documentado"
+  },
+  {
+    "id": "K008",
+    "stage": "basificacao",
+    "claim": "A basificação controlada modifica as condições de fixação no curtimento ao cromo; picos de pH podem prejudicar uniformidade.",
+    "source_ids": [
+      "S002",
+      "S007"
+    ],
+    "limits": "Não estabelecer um pH universal nem usar platô térmico como prova de reação completa.",
+    "status": "documentado"
+  },
+  {
+    "id": "K009",
+    "stage": "geral",
+    "claim": "Uma receita nominalmente igual pode gerar trajetórias distintas de pH, temperatura e movimento; os resultados dependem da história de processamento.",
+    "source_ids": [
+      "S001",
+      "S002"
+    ],
+    "limits": "Afirmação de dependência processual; efeito quantitativo precisa de dados.",
+    "status": "documentado"
+  },
+  {
+    "id": "K010",
+    "stage": "mecanica",
+    "claim": "Em fulão experimental, o tempo de movimento por rolamento aumentou 41% quando a rotação foi de 5 a 20 rpm no estudo de Lin et al. (2023).",
+    "source_ids": [
+      "S003"
+    ],
+    "limits": "O percentual descreve DURAÇÃO de rolamento, não absorção química; não extrapolar RPM ideal para outro fulão.",
+    "status": "documentado"
+  },
+  {
+    "id": "K011",
+    "stage": "mecanica",
+    "claim": "No estudo de Lin et al. (2023), o estado de rolamento teve transferência de massa maior do que deslizamento, elevação e suspensão nas condições modeladas.",
+    "source_ids": [
+      "S003"
+    ],
+    "limits": "Resultado experimental e de simulação condicionado ao fulão, material e regime estudados.",
+    "status": "documentado"
+  },
+  {
+    "id": "K012",
+    "stage": "analise",
+    "claim": "A ISO 4045:2018 define método de pH e diferença de pH em extrato aquoso de couro.",
+    "source_ids": [
+      "S008"
+    ],
+    "limits": "Não é uma medição direta de pH do banho nem perfil na seção transversal da pele.",
+    "status": "documentado"
+  },
+  {
+    "id": "K013",
+    "stage": "analise",
+    "claim": "A ISO 5398-1:2018 determina cromo total em solução obtida do couro por titulação.",
+    "source_ids": [
+      "S009"
+    ],
+    "limits": "Não determina isoladamente Cr(III), Cr(VI) ou grau de fixação.",
+    "status": "documentado"
+  },
+  {
+    "id": "K014",
+    "stage": "analise",
+    "claim": "A ISO 3380:2015 descreve medida da temperatura de retração do couro até 100°C.",
+    "source_ids": [
+      "S010"
+    ],
+    "limits": "Propriedade de produto/ensaio; não é medição direta contínua no fulão.",
+    "status": "documentado"
+  },
+  {
+    "id": "K015",
+    "stage": "analise",
+    "claim": "A ISO 4684:2005 determina matéria volátil, que não equivale a teor exato de água.",
+    "source_ids": [
+      "S011"
+    ],
+    "limits": "Outros voláteis podem sair e parte da água pode permanecer após aquecimento.",
+    "status": "documentado"
+  },
+  {
+    "id": "K016",
+    "stage": "instrumentacao",
+    "claim": "Sinal de pH do banho não demonstra, isoladamente, penetração ou uniformidade do agente dentro da pele.",
+    "source_ids": [
+      "S007",
+      "S008"
+    ],
+    "limits": "Limitação de observabilidade derivada de medidas em matrizes distintas.",
+    "status": "inferencia_fisica"
+  },
+  {
+    "id": "K017",
+    "stage": "instrumentacao",
+    "claim": "Concentração residual no banho não é sinônimo de fixação química ao couro.",
+    "source_ids": [
+      "S007",
+      "S009"
+    ],
+    "limits": "É necessário balanço de massa e confirmação química no couro.",
+    "status": "inferencia_fisica"
+  },
+  {
+    "id": "K018",
+    "stage": "mecanica",
+    "claim": "RPM é uma entrada de comando e não identifica sozinho os estados de rolamento, deslizamento e suspensão das peles.",
+    "source_ids": [
+      "S003"
+    ],
+    "limits": "A dinâmica depende de geometria, carga e material; relação quantitativa exige identificação.",
+    "status": "inferencia_fisica"
+  },
+  {
+    "id": "K019",
+    "stage": "remolho",
+    "claim": "O manual diferencia conservação com sal para períodos longos e comercialização de peles verdes com conservação curta por resfriamento.",
+    "source_ids": [
+      "S012"
+    ],
+    "limits": "Duas condições iniciais distintas; não assumir a mesma massa, água interna ou teor residual de NaCl.",
+    "status": "documentado",
+    "source_pages": [
+      "24 e 44–55"
+    ]
+  },
+  {
+    "id": "K020",
+    "stage": "remolho",
+    "claim": "O manual descreve o remolho como recuperação de hidratação e retirada de sujidade, proteínas solúveis e agentes conservantes.",
+    "source_ids": [
+      "S012"
+    ],
+    "limits": "Eficácia depende da matéria-prima; diferença de composição banho/pele não implica reidratação completa.",
+    "status": "documentado",
+    "source_pages": [
+      "54–55"
+    ]
+  },
+  {
+    "id": "K021",
+    "stage": "curtimento_cromo",
+    "claim": "O manual define basicidade de curtentes minerais como proporção de grupos hidroxila em relação às valências totais do metal complexante.",
+    "source_ids": [
+      "S012"
+    ],
+    "limits": "Definição Schorlemmer; requer composição do curtente e forma apropriada de expressar teor de cromo.",
+    "status": "documentado",
+    "source_pages": [
+      "92"
+    ]
+  },
+  {
+    "id": "K022",
+    "stage": "basificacao",
+    "claim": "O manual apresenta uma fórmula de cálculo teórico para elevar basicidade de licor de cromo usando diferença de basicidade, teor de Cr2O3 (g/L) e fator do basificante.",
+    "source_ids": [
+      "S012"
+    ],
+    "limits": "Cálculo estequiométrico tabulado, não confirmação de reação/fixação, nem prescrição universal de dosagem. Deve considerar pureza, composição, especiação, tamponamento e condições reais.",
+    "status": "documentado",
+    "source_pages": [
+      "92–93"
+    ]
+  },
+  {
+    "id": "K023",
+    "stage": "mecanica",
+    "claim": "O manual alerta que, sob carga excessiva, a velocidade de revolvimento do fardo de couros pode ficar abaixo do regime apropriado e aumentar RPM do fulão pode não corrigir a deficiência.",
+    "source_ids": [
+      "S012"
+    ],
+    "limits": "Afirmação qualitativa do manual; a fórmula ou diagrama gráfico específico não foi extraído de forma confiável do texto consultado.",
+    "status": "documentado",
+    "source_pages": [
+      "307"
+    ]
+  },
+  {
+    "id": "K024",
+    "stage": "mecanica",
+    "claim": "O manual fornece fórmula geométrica para volume interno aproximado de um fulão cilíndrico a partir do diâmetro e comprimento internos.",
+    "source_ids": [
+      "S012"
+    ],
+    "limits": "Volume geométrico vazio não é volume real de banho durante rotação com carga e ladrões anulares.",
+    "status": "documentado",
+    "source_pages": [
+      "306"
+    ]
+  },
+  {
+    "id": "K025",
+    "stage": "geral",
+    "claim": "UNIDO (2000) constrói balanço para curtume bovino hipotético, com base em 1.000 kg de peles salgadas úmidas e 1.100 kg de peles caleiradas na referência do curtimento.",
+    "source_ids": [
+      "S013"
+    ],
+    "limits": "Formação de couro para cabedal; dados de plantas específicas, literatura e estimativas; não é dataset industrial medido único.",
+    "status": "documentado",
+    "source_pages": [
+      "4",
+      "24–25"
+    ]
+  },
+  {
+    "id": "K026",
+    "stage": "geral",
+    "claim": "No cenário da UNIDO, aproximadamente 53% do colágeno do cório considerado formador de couro chega ao couro acabado.",
+    "source_ids": [
+      "S013"
+    ],
+    "limits": "Taxa referente ao balanço de referência com divisão em wet blue; não é rendimento de massa úmida.",
+    "status": "documentado",
+    "source_pages": [
+      "16–17"
+    ]
+  },
+  {
+    "id": "K027",
+    "stage": "curtimento_cromo",
+    "claim": "Na Figura 8 da UNIDO, dos 22 kg de Cr2O3 ofertados, 7,5 kg aparecem na flor aproveitável, 2,5 kg na raspa aproveitável, 6,5 kg em resíduos sólidos e 5,5 kg em efluentes.",
+    "source_ids": [
+      "S013"
+    ],
+    "limits": "O indicador de esgotamento da etapa (~75% distribuído em couro + resíduo sólido) não equivale a retenção no couro comercial: este soma 10/22 kg (~45,5%).",
+    "status": "documentado",
+    "source_pages": [
+      "10"
+    ]
+  },
+  {
+    "id": "K028",
+    "stage": "geral",
+    "claim": "O Anexo 1 da UNIDO apresenta formulação de referência com porcentagens baseadas no peso de pele salgada ou de pele caleirada, conforme a etapa.",
+    "source_ids": [
+      "S013"
+    ],
+    "limits": "Base de cálculo muda por operação e formulação é ilustrativa/histórica; não interpretar percentuais sobre uma única massa nem como prescrição.",
+    "status": "documentado",
+    "source_pages": [
+      "24–25"
+    ]
+  },
+  {
+    "id": "K029",
+    "stage": "remolho",
+    "claim": "CETESB distingue o fluxo de peles verdes e salgadas; a rota salgada costuma adicionar pré-remolho e lavagens, elevando água, insumos e carga de cloretos, em comparação com a verde.",
+    "source_ids": [
+      "S015"
+    ],
+    "limits": "Diferenças são típicas e dependem da conservação/roteiro real; não representam duas receitas completas e universais.",
+    "status": "documentado",
+    "source_pages": [
+      "35"
+    ]
+  },
+  {
+    "id": "K030",
+    "stage": "geral",
+    "claim": "CETESB informa intervalo de 12–37 m3 de água por tonelada de pele salgada em processo integrado, com 7–25 m3/t na ribeira e 1–3 m3/t no curtimento.",
+    "source_ids": [
+      "S015"
+    ],
+    "limits": "Faixas citadas da IULTCS (2008a), contexto produtivo heterogêneo; não são metas obrigatórias nem valores apenas do banho.",
+    "status": "documentado",
+    "source_pages": [
+      "38"
+    ]
+  },
+  {
+    "id": "K031",
+    "stage": "geral",
+    "claim": "O exemplo da CETESB fecha 21.500 kg de entradas e saídas para 1.000 kg de peles salgadas, 500 kg de produtos químicos e 20.000 kg de água.",
+    "source_ids": [
+      "S015"
+    ],
+    "limits": "Exemplo agregado de curtume; categoria 'outros' inclui correntes de efluente e resíduos e não descreve medições por fulão.",
+    "status": "documentado",
+    "source_pages": [
+      "37"
+    ]
+  },
+  {
+    "id": "K032",
+    "stage": "geral",
+    "claim": "A dissertação de Aquim (UFRGS, 2004) trata do balanço de massa e das perdas/aproveitamento de insumos nos processos de ribeira e curtimento até wet blue.",
+    "source_ids": [
+      "S014"
+    ],
+    "limits": "Somente resumo e metadados foram consultáveis nesta ingestão; nenhum resultado numérico da dissertação foi importado.",
+    "status": "documentado",
+    "source_pages": []
+  },
+  {
+    "id": "K033",
+    "stage": "geral",
+    "claim": "UNIDO estima que, em seu cenário, cerca de 72 kg dos 452 kg de químicos de processo são retidos no couro (aproximadamente 15%).",
+    "source_ids": [
+      "S013"
+    ],
+    "limits": "Agregado de classes químicas diferentes ao longo de várias etapas; NÃO corresponde à eficiência de um único produto ou reação.",
+    "status": "documentado",
+    "source_pages": [
+      "19",
+      "21"
+    ]
+  },
+  {
+    "id": "K034",
+    "stage": "geral",
+    "claim": "UNIDO esclarece que menor consumo de água pode elevar a concentração de poluentes (mg/L) mesmo quando a carga total (kg) diminui.",
+    "source_ids": [
+      "S013"
+    ],
+    "limits": "Comparar cargas e concentrações usando vazão/volume e composição; concentração isolada não é medida de redução de emissões.",
+    "status": "documentado",
+    "source_pages": [
+      "20"
+    ]
+  }
+]

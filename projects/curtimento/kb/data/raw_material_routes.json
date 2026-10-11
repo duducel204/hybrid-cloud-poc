@@ -1,0 +1,72 @@
+[
+  {
+    "id": "RTE001",
+    "name": "Peles conservadas com sal",
+    "initial_conditions": [
+      "Teor de NaCl incorporado e variável entre lotes.",
+      "Perda de água osmótica conforme conservação e armazenagem.",
+      "Possíveis efeitos de tempo e conservação na microbiologia e na estrutura."
+    ],
+    "tracked_inputs": [
+      "data_e_tipo_conservacao",
+      "massa_recebida",
+      "sal_residual_na_pele",
+      "umidade_inicial",
+      "temperatura_recebimento",
+      "tempo_armazenagem"
+    ],
+    "stage_impacts": [
+      {
+        "stage": "remolho",
+        "implication": "Investigar remoção de NaCl e reidratação antes de comparar com pele verde."
+      },
+      {
+        "stage": "caleiro",
+        "implication": "Condição inicial de água, sais e conservação afeta comparabilidade do lote."
+      }
+    ],
+    "source_ids": [
+      "S012",
+      "S002"
+    ],
+    "source_pages": [
+      "24, 44–55"
+    ],
+    "status": "rota_de_referencia_nao_receita"
+  },
+  {
+    "id": "RTE002",
+    "name": "Peles verdes de frigorífico (não salgadas)",
+    "initial_conditions": [
+      "Sem carga elevada de NaCl atribuível a salga convencional.",
+      "Maior dependência do tempo após esfola, higiene e histórico térmico de transporte.",
+      "Estado de hidratação inicial distinto daquele da pele salgada."
+    ],
+    "tracked_inputs": [
+      "hora_abate_esfola",
+      "hora_recebimento",
+      "temperatura_transporte",
+      "massa_recebida",
+      "umidade_inicial",
+      "condicao_microbiologica"
+    ],
+    "stage_impacts": [
+      {
+        "stage": "remolho",
+        "implication": "Avaliar lavagem e limpeza sem pressupor dessalga equivalente à rota salgada."
+      },
+      {
+        "stage": "caleiro",
+        "implication": "Condição de hidratação e conservação precisa entrar como estado inicial do modelo."
+      }
+    ],
+    "source_ids": [
+      "S012",
+      "S002"
+    ],
+    "source_pages": [
+      "24, 44–55"
+    ],
+    "status": "rota_de_referencia_nao_receita"
+  }
+]

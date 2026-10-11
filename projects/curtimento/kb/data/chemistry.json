@@ -1,0 +1,143 @@
+[
+  {
+    "id": "C001",
+    "substance": "Cloreto de sódio",
+    "formula": "NaCl",
+    "steps": [
+      "remolho",
+      "piquel"
+    ],
+    "role": "Na pele conservada é removido durante remolho; no píquel convencional, eletrólito ajuda a controlar inchamento ácido.",
+    "qualification": "A concentração depende da rota; há alternativas de processamento com menos sal.",
+    "source_ids": [
+      "S001",
+      "S002"
+    ]
+  },
+  {
+    "id": "C002",
+    "substance": "Hidróxido de cálcio",
+    "formula": "Ca(OH)2",
+    "steps": [
+      "caleiro",
+      "desencalagem"
+    ],
+    "role": "Fonte de alcalinidade/cal no caleiro; cálcio e alcalinidade residuais são alvos de remoção na desencalagem.",
+    "qualification": "Disponibilidade, solubilidade e alcalinidade não são intercambiáveis com pH isolado.",
+    "source_ids": [
+      "S001",
+      "S005"
+    ]
+  },
+  {
+    "id": "C003",
+    "substance": "Sulfeto de sódio",
+    "formula": "Na2S",
+    "steps": [
+      "caleiro"
+    ],
+    "role": "Agente empregado em depilação redutora convencional, com espécies dependentes do pH.",
+    "qualification": "Sulfetos em meio acidificado podem liberar H2S, gás extremamente tóxico; risco exige controle industrial próprio.",
+    "source_ids": [
+      "S001",
+      "S002"
+    ]
+  },
+  {
+    "id": "C004",
+    "substance": "Dióxido de carbono",
+    "formula": "CO2",
+    "steps": [
+      "desencalagem"
+    ],
+    "role": "Uma das alternativas industriais para reduzir alcalinidade na desencalagem.",
+    "qualification": "Não se confunde com medição direta do cálcio residual na pele.",
+    "source_ids": [
+      "S001"
+    ]
+  },
+  {
+    "id": "C005",
+    "substance": "Enzimas de purga",
+    "formula": "mistura_biologica",
+    "steps": [
+      "purga"
+    ],
+    "role": "Atuam seletivamente sobre materiais não colagênicos em condições adequadas.",
+    "qualification": "Atividade depende do preparado comercial, pH, temperatura e lote; não assumir atividade idêntica.",
+    "source_ids": [
+      "S002",
+      "S006"
+    ]
+  },
+  {
+    "id": "C006",
+    "substance": "Ácido sulfúrico",
+    "formula": "H2SO4",
+    "steps": [
+      "piquel"
+    ],
+    "role": "Ácido inorgânico que pode compor sistemas convencionais de acidificação.",
+    "qualification": "Combinação com sulfetos residuais apresenta risco de H2S. Não é uma instrução de formulação.",
+    "source_ids": [
+      "S001",
+      "S007"
+    ]
+  },
+  {
+    "id": "C007",
+    "substance": "Ácido fórmico",
+    "formula": "HCOOH",
+    "steps": [
+      "piquel"
+    ],
+    "role": "Ácido orgânico empregado em sistemas de píquel e condicionamento químico.",
+    "qualification": "A função real depende da sequência de adição e do sistema ácido/base; sem dosagens neste catálogo.",
+    "source_ids": [
+      "S001",
+      "S007"
+    ]
+  },
+  {
+    "id": "C008",
+    "substance": "Sulfato básico de cromo (complexos de Cr III)",
+    "formula": "complexos_CrIII_nao_uma_formula_unica",
+    "steps": [
+      "curtimento_cromo",
+      "basificacao"
+    ],
+    "role": "Curtente mineral convencional que transporta cromo à pele e interage com colágeno.",
+    "qualification": "Composição, basicidade e distribuição dos complexos podem variar conforme produto/lote.",
+    "source_ids": [
+      "S001",
+      "S002",
+      "S007"
+    ]
+  },
+  {
+    "id": "C009",
+    "substance": "Bicarbonato de sódio",
+    "formula": "NaHCO3",
+    "steps": [
+      "basificacao"
+    ],
+    "role": "Um dos agentes de basificação em curtimento convencional ao cromo.",
+    "qualification": "Agente alternativo a outros sistemas; não confundir com pH-alvo ou receita universal.",
+    "source_ids": [
+      "S001"
+    ]
+  },
+  {
+    "id": "C010",
+    "substance": "Óxido de magnésio",
+    "formula": "MgO",
+    "steps": [
+      "basificacao"
+    ],
+    "role": "Agente de basificação em determinadas formulações.",
+    "qualification": "Velocidade de disponibilização de alcalinidade depende de características do produto e do meio.",
+    "source_ids": [
+      "S001"
+    ]
+  }
+]

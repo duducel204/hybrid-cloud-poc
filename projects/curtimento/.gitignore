@@ -1,0 +1,8 @@
+# dados industriais e bases locais geradas
+*.sqlite
+*.sqlite3
+*.db
+/private/
+/raw/
+/telemetria/
+__pycache__/
